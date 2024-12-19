@@ -22,17 +22,17 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
 
   return (
     <div className="modal min-h-40">
-      <div className="flex items-center gap-[8px]">
+      <div className="flex items-center gap-2">
         <Image
           alt="logo bot ban hang"
           src={Logo}
-          className="h-[28px] w-[23px] object-cover"
+          className="h-7 w-[23px] object-cover"
         />
         <h1 className="text-base font-semibold">Bot Bán Hàng</h1>
       </div>
-      <div className="space-y-[4px]">
+      <div className="space-y-1">
         <p
-          className="font-bold text-2xl flex items-center gap-[8px] cursor-pointer"
+          className="font-bold text-2xl flex items-center gap-2 cursor-pointer"
           onClick={setIsTypingPassword}
         >
           <ArrowLeft />
@@ -41,21 +41,21 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
         <p className="text-sm">Continue to Bot Bán Hàng</p>
       </div>
       {reset && (
-        <p className="flex items-center gap-[12px] border border-green-600 bg-green-50 rounded-lg text-green-600 px-[16px] py-[12px] text-sm">
+        <p className="flex items-center gap-3 border border-green-600 bg-green-50 rounded-lg text-green-600 px-4 py-3 text-sm">
           {Icons.tick}
           <span>A link to reset your password has been emailed to you.</span>
         </p>
       )}
-      <div className="space-y-[12px]">
-        <div className="space-y-[4px]">
+      <div className="space-y-3">
+        <div className="space-y-1">
           <p className="font-medium text-sm">Email</p>
           <Input placeholder="Enter your email" />
         </div>
-        <div className="space-y-[4px]">
+        <div className="space-y-1">
           <p className="font-medium text-sm">Password</p>
           <Input placeholder="Enter your password" type="password" />
         </div>
-        <div className="space-y-[4px]">
+        <div className="space-y-1">
           <Link
             href={"/forgotpassword"}
             className="font-medium text-sm text-blue-700"

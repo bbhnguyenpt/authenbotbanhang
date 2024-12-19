@@ -4,11 +4,11 @@ import React from "react"
 
 const GoToSignup = () => {
   return (
-    <div className="flex text-sm gap-[12px] items-center">
+    <div className="flex text-sm gap-3 items-center">
       <span>New to Bot Bán Hàng?</span>
       <Link
         href={"/signup"}
-        className="flex items-center gap-[4px] text-blue-700 cursor-pointer hover:underline"
+        className="flex items-center gap-1 text-blue-700 cursor-pointer hover:underline"
       >
         Get Started <ArrowRight size={16} />
       </Link>
