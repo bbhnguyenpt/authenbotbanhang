@@ -56,7 +56,7 @@ const SelectLanguage = () => {
           <ChevronDown size={12} />
         </p>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[171px] pt-[16px]">
+      <DropdownMenuContent className="w-[171px] pt-[16px] translate-x-[-46px]">
         <Language language="English" />
         <Language language="Vietnam" />
         <Language language="Thailan" />

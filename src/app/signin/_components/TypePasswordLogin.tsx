@@ -1,16 +1,18 @@
-import Actions from "@/components/form/Actions"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Logo } from "@/public/logo"
-import { ArrowLeft, ArrowRight } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import { FC } from "react"
+import Actions from "./Actions"
+import GoToSignup from "./GoToSignup"
+import Link from "next/link"
 
-interface TypePasswordModalProps {
+interface TypePasswordLoginProps {
   setIsTypingPassword: () => void
 }
 
-const TypePasswordModal: FC<TypePasswordModalProps> = ({
+const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
   setIsTypingPassword,
 }) => {
   return (
@@ -43,19 +45,19 @@ const TypePasswordModal: FC<TypePasswordModalProps> = ({
           <Input placeholder="Enter your password" type="password" />
         </div>
         <div className="space-y-[4px]">
-          <p className="font-medium text-sm text-blue-700">Forgot password?</p>
+          <Link
+            href={"/forgotpassword"}
+            className="font-medium text-sm text-blue-700"
+          >
+            Forgot password?
+          </Link>
         </div>
         <Button className="text-base font-semibold w-full">Log in</Button>
       </div>
-      <div className="flex text-sm gap-[12px] items-center">
-        <span>New to Bot Bán Hàng?</span>
-        <span className="flex items-center gap-[4px] text-blue-700">
-          Get Started <ArrowRight size={16} />
-        </span>
-      </div>
+      <GoToSignup />
       <Actions />
     </div>
   )
 }
 
-export default TypePasswordModal
+export default TypePasswordLogin

@@ -1,18 +1,18 @@
-import Actions from "@/components/form/Actions"
-import Divider from "@/components/form/Divider"
-import ThirdPartyButton from "@/components/form/ThirdPartyButton"
+import Divider from "@/components/authentication-modal/Divider"
+import ThirdPartyButton from "@/components/authentication-modal/ThirdPartyButton"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Logo } from "@/public/logo"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import React, { FC } from "react"
+import { FC } from "react"
+import Actions from "./Actions"
+import GoToLogin from "./GoToLogin"
 
-interface TypeEmailModalProps {
+interface TypeEmailSignupProps {
   setIsTypingPassword: () => void
 }
 
-const TypeEmailModal: FC<TypeEmailModalProps> = ({ setIsTypingPassword }) => {
+const TypeEmailSignup: FC<TypeEmailSignupProps> = ({ setIsTypingPassword }) => {
   return (
     <div className="modal min-h-40">
       <div className="flex items-center gap-[8px]">
@@ -45,15 +45,10 @@ const TypeEmailModal: FC<TypeEmailModalProps> = ({ setIsTypingPassword }) => {
         <ThirdPartyButton target="Google" />
         <ThirdPartyButton target="Facebook" />
       </div>
-      <div className="flex text-sm gap-[12px] items-center">
-        <span>Already have a Retion account?</span>
-        <span className="flex items-center gap-[4px] text-blue-700">
-          Log in <ArrowRight size={16} />
-        </span>
-      </div>
+      <GoToLogin />
       <Actions />
     </div>
   )
 }
 
-export default TypeEmailModal
+export default TypeEmailSignup

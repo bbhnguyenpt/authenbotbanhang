@@ -1,16 +1,17 @@
-import Actions from "@/components/form/Actions"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Logo } from "@/public/logo"
-import { ArrowLeft, ArrowRight } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import { FC } from "react"
+import Actions from "./Actions"
+import GoToLogin from "./GoToLogin"
 
-interface TypePasswordModalProps {
+interface TypePasswordSignupProps {
   setIsTypingPassword: () => void
 }
 
-const TypePasswordModal: FC<TypePasswordModalProps> = ({
+const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
   setIsTypingPassword,
 }) => {
   return (
@@ -38,24 +39,32 @@ const TypePasswordModal: FC<TypePasswordModalProps> = ({
           <p className="font-medium text-sm">Email</p>
           <Input placeholder="Enter your email" />
         </div>
+        <div className="flex justify-between">
+          <div className="space-y-[4px]">
+            <p className="font-medium text-sm">First name</p>
+            <Input placeholder="Enter your first name" />
+          </div>
+          <div className="space-y-[4px]">
+            <p className="font-medium text-sm">Last name</p>
+            <Input placeholder="Enter your last name" />
+          </div>
+        </div>
         <div className="space-y-[4px]">
           <p className="font-medium text-sm">Password</p>
           <Input placeholder="Enter your password" type="password" />
         </div>
         <div className="space-y-[4px]">
-          <p className="font-medium text-sm text-blue-700">Forgot password?</p>
+          <p className="font-medium text-sm">Confirm new password</p>
+          <Input placeholder="Enter your password" type="password" />
         </div>
-        <Button className="text-base font-semibold w-full">Log in</Button>
+        <Button className="text-base font-semibold w-full">
+          Create Retion account
+        </Button>
       </div>
-      <div className="flex text-sm gap-[12px] items-center">
-        <span>New to Bot Bán Hàng?</span>
-        <span className="flex items-center gap-[4px] text-blue-700">
-          Get Started <ArrowRight size={16} />
-        </span>
-      </div>
+      <GoToLogin />
       <Actions />
     </div>
   )
 }
 
-export default TypePasswordModal
+export default TypePasswordSignup

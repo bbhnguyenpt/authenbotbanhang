@@ -1,18 +1,18 @@
-import Actions from "@/components/form/Actions"
-import Divider from "@/components/form/Divider"
-import ThirdPartyButton from "@/components/form/ThirdPartyButton"
+import Divider from "@/components/authentication-modal/Divider"
+import ThirdPartyButton from "@/components/authentication-modal/ThirdPartyButton"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Logo } from "@/public/logo"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import React, { FC } from "react"
+import { FC } from "react"
+import Actions from "./Actions"
+import GoToSignup from "./GoToSignup"
 
-interface TypeEmailModalProps {
+interface TypeEmailLoginProps {
   setIsTypingPassword: () => void
 }
 
-const TypeEmailModal: FC<TypeEmailModalProps> = ({ setIsTypingPassword }) => {
+const TypeEmailLogin: FC<TypeEmailLoginProps> = ({ setIsTypingPassword }) => {
   return (
     <div className="modal min-h-40">
       <div className="flex items-center gap-[8px]">
@@ -43,15 +43,10 @@ const TypeEmailModal: FC<TypeEmailModalProps> = ({ setIsTypingPassword }) => {
       <div className="flex flex-col gap-[12px]">
         <ThirdPartyButton target="Facebook" />
       </div>
-      <div className="flex text-sm gap-[12px] items-center">
-        <span>New to Bot Bán Hàng?</span>
-        <span className="flex items-center gap-[4px] text-blue-700">
-          Get Started <ArrowRight size={16} />
-        </span>
-      </div>
+      <GoToSignup />
       <Actions />
     </div>
   )
 }
 
-export default TypeEmailModal
+export default TypeEmailLogin

@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client"
-import React, { useState } from "react"
-import TypePasswordModal from "./_components/TypePasswordModal"
-import TypeEmailModal from "./_components/TypeEmailModal"
+import { useState } from "react"
+import TypeEmailSignup from "./_components/TypeEmailSignup"
+import TypePasswordSignup from "./_components/TypePasswordSignup"
 
 const page = () => {
   const [isTypingPassword, setIsTypingPassword] = useState(false)
@@ -10,13 +10,15 @@ const page = () => {
   function renderModal() {
     if (isTypingPassword) {
       return (
-        <TypePasswordModal
+        <TypePasswordSignup
           setIsTypingPassword={() => setIsTypingPassword(false)}
         />
       )
     } else {
       return (
-        <TypeEmailModal setIsTypingPassword={() => setIsTypingPassword(true)} />
+        <TypeEmailSignup
+          setIsTypingPassword={() => setIsTypingPassword(true)}
+        />
       )
     }
   }
