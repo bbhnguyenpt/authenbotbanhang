@@ -4,7 +4,7 @@ import { Logo } from "@/public/logo"
 import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import { FC } from "react"
-import Actions from "./Actions"
+import ActionsSignup from "./ActionsSignup"
 import GoToLogin from "./GoToLogin"
 
 interface TypePasswordSignupProps {
@@ -62,7 +62,7 @@ const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
         </Button>
       </div>
       <GoToLogin />
-      <Actions />
+      <ActionsSignup />
     </div>
   )
 }

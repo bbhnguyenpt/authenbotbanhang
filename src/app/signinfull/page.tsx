@@ -6,7 +6,7 @@ import { Logo } from "@/public/logo"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import React from "react"
-import Actions from "../signin/_components/Actions"
+import Actions from "../../components/authentication-modal/Actions"
 
 const page = () => {
   return (

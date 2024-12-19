@@ -4,9 +4,11 @@ import { Logo } from "@/public/logo"
 import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import { FC } from "react"
-import Actions from "./Actions"
+import Actions from "@/components/authentication-modal/Actions"
 import GoToSignup from "./GoToSignup"
 import Link from "next/link"
+import { useSearchParams } from "next/navigation"
+import Icons from "@/Svgs/Icons"
 
 interface TypePasswordLoginProps {
   setIsTypingPassword: () => void
@@ -15,6 +17,9 @@ interface TypePasswordLoginProps {
 const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
   setIsTypingPassword,
 }) => {
+  const searchParams = useSearchParams()
+  const reset = Boolean(searchParams.get("reset"))
+
   return (
     <div className="modal min-h-40">
       <div className="flex items-center gap-[8px]">
@@ -35,6 +40,12 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
         </p>
         <p className="text-sm">Continue to Bot Bán Hàng</p>
       </div>
+      {reset && (
+        <p className="flex items-center gap-[12px] border border-green-600 bg-green-50 rounded-lg text-green-600 px-[16px] py-[12px] text-sm">
+          {Icons.tick}
+          <span>A link to reset your password has been emailed to you.</span>
+        </p>
+      )}
       <div className="space-y-[12px]">
         <div className="space-y-[4px]">
           <p className="font-medium text-sm">Email</p>

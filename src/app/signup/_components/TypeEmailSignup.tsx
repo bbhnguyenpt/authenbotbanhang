@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Logo } from "@/public/logo"
 import Image from "next/image"
 import { FC } from "react"
-import Actions from "./Actions"
+import ActionsSignup from "./ActionsSignup"
 import GoToLogin from "./GoToLogin"
 
 interface TypeEmailSignupProps {
@@ -46,7 +46,7 @@ const TypeEmailSignup: FC<TypeEmailSignupProps> = ({ setIsTypingPassword }) => {
         <ThirdPartyButton target="Facebook" />
       </div>
       <GoToLogin />
-      <Actions />
+      <ActionsSignup />
     </div>
   )
 }
