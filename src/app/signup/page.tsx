@@ -20,7 +20,11 @@ const page = () => {
       )
     }
   }
-  return <section className="size-full center-child">{renderModal()}</section>
+  return (
+    <section className="size-full center-child px-[17px]">
+      {renderModal()}
+    </section>
+  )
 }
 
 export default page

@@ -10,7 +10,7 @@ import React from "react"
 
 const page = () => {
   return (
-    <section className="size-full center-child">
+    <section className="size-full center-child px-[17px]">
       <div className="modal min-h-40">
         <div className="flex items-center gap-[8px]">
           <Image
