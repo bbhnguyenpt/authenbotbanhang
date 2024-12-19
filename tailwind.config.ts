@@ -58,7 +58,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        "main-bg": "url('@/public/bg/bg.png')",
+        "main-bg": "url('/bg/bg.png')",
       },
     },
   },
