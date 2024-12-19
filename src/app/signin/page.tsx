@@ -1,22 +1,31 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client"
-import { useState } from "react"
-import TypeEmailModal from "./_components/TypeEmailModal"
-import TypePasswordModal from "./_components/TypePasswordModal"
+import { useEffect, useState } from "react"
+import TypeEmailLogin from "./_components/TypeEmailLogin"
+import TypePasswordLogin from "./_components/TypePasswordLogin"
+import { useSearchParams } from "next/navigation"
 
 const page = () => {
+  const searchParams = useSearchParams()
   const [isTypingPassword, setIsTypingPassword] = useState(false)
+
+  useEffect(() => {
+    if (Boolean(searchParams.get("reset"))) {
+      setIsTypingPassword(true)
+    }
+  }, [])
 
   function renderModal() {
     if (isTypingPassword) {
       return (
-        <TypePasswordModal
+        <TypePasswordLogin
           setIsTypingPassword={() => setIsTypingPassword(false)}
         />
       )
     } else {
       return (
-        <TypeEmailModal setIsTypingPassword={() => setIsTypingPassword(true)} />
+        <TypeEmailLogin setIsTypingPassword={() => setIsTypingPassword(true)} />
       )
     }
   }

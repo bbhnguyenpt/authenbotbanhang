@@ -75,6 +75,6 @@ body {
   }
 
   .modal {
-    @apply bg-white w-[478px] rounded-[12px] flex flex-col gap-[24px] p-[24px];
+    @apply bg-white w-full max-w-[478px] rounded-[12px] flex flex-col gap-6 p-6;
   }
 }

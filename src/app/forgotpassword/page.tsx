@@ -1,12 +1,10 @@
-import Divider from "@/components/authentication-modal/Divider"
-import ThirdPartyButton from "@/components/authentication-modal/ThirdPartyButton"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Logo } from "@/public/logo"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import React from "react"
-import Actions from "../../components/authentication-modal/Actions"
+import { Logo } from "@/public/logo"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import GoToLogin from "./_components/GoToLogin"
+import Actions from "@/components/authentication-modal/Actions"
+import Link from "next/link"
 
 const page = () => {
   return (
@@ -30,21 +28,12 @@ const page = () => {
             <Input placeholder="Enter your email" />
           </div>
           <Button className="text-base font-semibold w-full">
-            Continue with email
+            <Link href={"/signin?reset=true"} className="size-full">
+              Reset password
+            </Link>
           </Button>
         </div>
-        <Divider />
-        <div className="flex flex-col gap-3">
-          <ThirdPartyButton target="Apple" />
-          <ThirdPartyButton target="Google" />
-          <ThirdPartyButton target="Facebook" />
-        </div>
-        <div className="flex text-sm gap-3 items-center">
-          <span>New to Bot Bán Hàng?</span>
-          <span className="flex items-center gap-1 text-blue-700">
-            Get Started <ArrowRight size={16} />
-          </span>
-        </div>
+        <GoToLogin />
         <Actions />
       </div>
     </section>
