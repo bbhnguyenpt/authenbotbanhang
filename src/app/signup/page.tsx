@@ -23,7 +23,7 @@ const page = () => {
     }
   }
   return (
-    <section className="size-full center-child px-[17px]">
+    <section className="size-full center-child p-[17px]">
       {renderModal()}
     </section>
   )

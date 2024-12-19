@@ -21,7 +21,7 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
   const reset = Boolean(searchParams.get("reset"))
 
   return (
-    <div className="modal min-h-40">
+    <div className="modal ">
       <div className="flex items-center gap-2">
         <Image
           alt="logo bot ban hang"
@@ -30,7 +30,7 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
         />
         <h1 className="text-base font-semibold">Bot Bán Hàng</h1>
       </div>
-      <div className="space-y-1">
+      <div className="flex flex-col gap-1">
         <p
           className="font-bold text-2xl flex items-center gap-2 cursor-pointer"
           onClick={setIsTypingPassword}
@@ -46,16 +46,16 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
           <span>A link to reset your password has been emailed to you.</span>
         </p>
       )}
-      <div className="space-y-3">
-        <div className="space-y-1">
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Email</p>
           <Input placeholder="Enter your email" />
         </div>
-        <div className="space-y-1">
+        <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Password</p>
           <Input placeholder="Enter your password" type="password" />
         </div>
-        <div className="space-y-1">
+        <div className="flex flex-col gap-1">
           <Link
             href={"/forgotpassword"}
             className="font-medium text-sm text-blue-700"

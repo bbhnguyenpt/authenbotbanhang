@@ -15,7 +15,7 @@ const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
   setIsTypingPassword,
 }) => {
   return (
-    <div className="modal min-h-40">
+    <div className="modal ">
       <div className="flex items-center gap-2">
         <Image
           alt="logo bot ban hang"
@@ -24,7 +24,7 @@ const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
         />
         <h1 className="text-base font-semibold">Bot Bán Hàng</h1>
       </div>
-      <div className="space-y-1">
+      <div className="flex flex-col gap-1">
         <p
           className="font-bold text-2xl flex items-center gap-2 cursor-pointer"
           onClick={setIsTypingPassword}
@@ -34,26 +34,26 @@ const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
         </p>
         <p className="text-sm">One last step before starting your free trial</p>
       </div>
-      <div className="space-y-3">
-        <div className="space-y-1">
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Email</p>
           <Input placeholder="Enter your email" />
         </div>
         <div className="flex justify-between">
-          <div className="space-y-1">
+          <div className="flex flex-col gap-1">
             <p className="font-medium text-sm">First name</p>
             <Input placeholder="Enter your first name" />
           </div>
-          <div className="space-y-1">
+          <div className="flex flex-col gap-1">
             <p className="font-medium text-sm">Last name</p>
             <Input placeholder="Enter your last name" />
           </div>
         </div>
-        <div className="space-y-1">
+        <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Password</p>
           <Input placeholder="Enter your password" type="password" />
         </div>
-        <div className="space-y-1">
+        <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Confirm new password</p>
           <Input placeholder="Enter your password" type="password" />
         </div>

@@ -75,6 +75,17 @@ body {
   }
 
   .modal {
-    @apply bg-white w-full max-w-[478px] rounded-[12px] flex flex-col gap-6 p-6;
+    @apply bg-white w-full max-w-[478px] rounded-[12px] flex flex-col gap-6 p-6 max-h-full overflow-y-scroll;
   }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
