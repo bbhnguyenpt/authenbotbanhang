@@ -1,13 +1,15 @@
 import NavComment from './_components/NavComment'
+import Chatbox from './_components/chatbox/Chatbox'
 import Conversations from './_components/conversations/Conversations'
+import Widget from './_components/widget/Widget'
 
 function page() {
   return (
     <div className="flex size-full p-2 gap-3 bg-[#efedf3]">
       <NavComment />
       <Conversations />
-      <section className="w-full ">chats</section>
-      <section className="w-[400px] bg-red-300 flex-shrink-0">chats</section>
+      <Chatbox />
+      <Widget />
     </div>
   )
 }

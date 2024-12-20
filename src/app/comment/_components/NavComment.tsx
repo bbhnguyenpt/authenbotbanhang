@@ -16,7 +16,7 @@ function NavComment() {
           {NavIcons[0].icon}
         </span>
       </div>
-      <div className="flex flex-col gap-1 py-1 flex-auto">
+      <div className="flex flex-col gap-1 py-1 flex-auto overflow-y-scroll no-scrollbar">
         {NavIcons.slice(1).map((navItem, index) => (
           <span
             key={index}
