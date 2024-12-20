@@ -1,14 +1,14 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Logo } from "@/public/logo"
-import { ArrowLeft } from "lucide-react"
-import Image from "next/image"
-import { FC } from "react"
-import Actions from "@/components/authentication-modal/Actions"
-import GoToSignup from "./GoToSignup"
-import Link from "next/link"
-import { useSearchParams } from "next/navigation"
-import Icons from "@/Svgs/Icons"
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Logo } from '@/public/logo'
+import { ArrowLeft } from 'lucide-react'
+import Image from 'next/image'
+import { FC } from 'react'
+import Actions from '@/components/authentication-modal/Actions'
+import GoToSignup from './GoToSignup'
+import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
+import Icons from '@/Svgs/Icons'
 
 interface TypePasswordLoginProps {
   setIsTypingPassword: () => void
@@ -18,7 +18,7 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
   setIsTypingPassword,
 }) => {
   const searchParams = useSearchParams()
-  const reset = Boolean(searchParams.get("reset"))
+  const reset = Boolean(searchParams.get('reset'))
 
   return (
     <div className="modal ">
@@ -53,11 +53,14 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
         </div>
         <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Password</p>
-          <Input placeholder="Enter your password" type="password" />
+          <Input
+            placeholder="Enter your password"
+            type="password"
+          />
         </div>
         <div className="flex flex-col gap-1">
           <Link
-            href={"/forgotpassword"}
+            href={'/forgotpassword'}
             className="font-medium text-sm text-blue-700"
           >
             Forgot password?

@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-"use client"
-import { useState } from "react"
-import TypeEmailSignup from "./_components/TypeEmailSignup"
-import TypePasswordSignup from "./_components/TypePasswordSignup"
+'use client'
+import { useState } from 'react'
+import TypeEmailSignup from './_components/TypeEmailSignup'
+import TypePasswordSignup from './_components/TypePasswordSignup'
 
 const page = () => {
   const [isTypingPassword, setIsTypingPassword] = useState(false)

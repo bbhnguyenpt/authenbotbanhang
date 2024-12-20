@@ -1,12 +1,12 @@
-import Divider from "@/components/authentication-modal/Divider"
-import ThirdPartyButton from "@/components/authentication-modal/ThirdPartyButton"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Logo } from "@/public/logo"
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
-import React from "react"
-import Actions from "../../components/authentication-modal/Actions"
+import Divider from '@/components/authentication-modal/Divider'
+import ThirdPartyButton from '@/components/authentication-modal/ThirdPartyButton'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Logo } from '@/public/logo'
+import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import React from 'react'
+import Actions from '../../components/authentication-modal/Actions'
 
 const page = () => {
   return (

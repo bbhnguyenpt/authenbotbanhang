@@ -1,19 +1,19 @@
-import React, { FC } from "react"
-import { Button } from "../ui/button"
-import Icons from "@/Svgs/Icons"
+import React, { FC } from 'react'
+import { Button } from '../ui/button'
+import Icons from '@/Svgs/Icons'
 
 interface ThirdPartyButtonProps {
-  target: "Google" | "Facebook" | "Apple"
+  target: 'Google' | 'Facebook' | 'Apple'
 }
 
 const ThirdPartyButton: FC<ThirdPartyButtonProps> = ({ target }) => {
   function renderIcon() {
     switch (target) {
-      case "Apple":
+      case 'Apple':
         return Icons.apple
-      case "Facebook":
+      case 'Facebook':
         return Icons.facebook
-      case "Google":
+      case 'Google':
         return Icons.google
 
       default:
@@ -24,7 +24,7 @@ const ThirdPartyButton: FC<ThirdPartyButtonProps> = ({ target }) => {
   return (
     <Button
       className="text-base font-semibold w-full bg-slate-100 border-slate-200 border"
-      variant={"secondary"}
+      variant={'secondary'}
     >
       {renderIcon()}
       <span>Continue with {target}</span>

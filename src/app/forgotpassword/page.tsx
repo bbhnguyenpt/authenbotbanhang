@@ -1,10 +1,10 @@
-import Image from "next/image"
-import { Logo } from "@/public/logo"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import GoToLogin from "./_components/GoToLogin"
-import Actions from "@/components/authentication-modal/Actions"
-import Link from "next/link"
+import Image from 'next/image'
+import { Logo } from '@/public/logo'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
+import GoToLogin from './_components/GoToLogin'
+import Actions from '@/components/authentication-modal/Actions'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -28,7 +28,10 @@ const page = () => {
             <Input placeholder="Enter your email" />
           </div>
           <Button className="text-base font-semibold w-full">
-            <Link href={"/signin?reset=true"} className="size-full">
+            <Link
+              href={'/signin?reset=true'}
+              className="size-full"
+            >
               Reset password
             </Link>
           </Button>

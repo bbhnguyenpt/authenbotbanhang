@@ -1,4 +1,4 @@
-import SelectLanguage from "@/components/authentication-modal/SelectLanguage"
+import SelectLanguage from '@/components/authentication-modal/SelectLanguage'
 
 const Actions = () => {
   return (

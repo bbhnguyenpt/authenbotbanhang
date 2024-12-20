@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Logo } from "@/public/logo"
-import { ArrowLeft } from "lucide-react"
-import Image from "next/image"
-import { FC } from "react"
-import ActionsSignup from "./ActionsSignup"
-import GoToLogin from "./GoToLogin"
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Logo } from '@/public/logo'
+import { ArrowLeft } from 'lucide-react'
+import Image from 'next/image'
+import { FC } from 'react'
+import ActionsSignup from './ActionsSignup'
+import GoToLogin from './GoToLogin'
 
 interface TypePasswordSignupProps {
   setIsTypingPassword: () => void
@@ -51,11 +51,17 @@ const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
         </div>
         <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Password</p>
-          <Input placeholder="Enter your password" type="password" />
+          <Input
+            placeholder="Enter your password"
+            type="password"
+          />
         </div>
         <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Confirm new password</p>
-          <Input placeholder="Enter your password" type="password" />
+          <Input
+            placeholder="Enter your password"
+            type="password"
+          />
         </div>
         <Button className="text-base font-semibold w-full">
           Create Retion account

@@ -2,45 +2,49 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { English, Indo, Thailan, Vietnam } from "@/public/languages"
-import { ChevronDown } from "lucide-react"
-import Image from "next/image"
-import { FC } from "react"
+} from '@/components/ui/dropdown-menu'
+import { English, Indo, Thailan, Vietnam } from '@/public/languages'
+import { ChevronDown } from 'lucide-react'
+import Image from 'next/image'
+import { FC } from 'react'
 
 interface LanguageProps {
-  language: "English" | "Vietnam" | "Thailan" | "Indo"
+  language: 'English' | 'Vietnam' | 'Thailan' | 'Indo'
 }
 
 const Language: FC<LanguageProps> = ({ language }) => {
   function renderIcon() {
     switch (language) {
-      case "English":
+      case 'English':
         return English
-      case "Vietnam":
+      case 'Vietnam':
         return Vietnam
-      case "Thailan":
+      case 'Thailan':
         return Thailan
-      case "Indo":
+      case 'Indo':
         return Indo
     }
   }
 
   function renderLanguage() {
     switch (language) {
-      case "English":
-        return "English"
-      case "Vietnam":
-        return "Tiếng việt"
-      case "Thailan":
-        return "ภาษาไทย"
-      case "Indo":
-        return "Bahasa"
+      case 'English':
+        return 'English'
+      case 'Vietnam':
+        return 'Tiếng việt'
+      case 'Thailan':
+        return 'ภาษาไทย'
+      case 'Indo':
+        return 'Bahasa'
     }
   }
   return (
     <p className="flex items-center gap-3 px-3 py-[6px] cursor-pointer">
-      <Image alt="language" src={renderIcon()} className="size-5" />
+      <Image
+        alt="language"
+        src={renderIcon()}
+        className="size-5"
+      />
       <span className="text-sm">{renderLanguage()}</span>
     </p>
   )
@@ -51,7 +55,11 @@ const SelectLanguage = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <p className="flex items-center gap-1 cursor-pointer">
-          <Image alt="language" src={English} className="size-3" />
+          <Image
+            alt="language"
+            src={English}
+            className="size-3"
+          />
           <span className="text-xs">English</span>
           <ChevronDown size={12} />
         </p>
