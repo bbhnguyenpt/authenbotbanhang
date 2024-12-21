@@ -35,7 +35,7 @@ const TypeEmailSignup: FC<TypeEmailSignupProps> = ({ setIsTypingPassword }) => {
           <Input placeholder="Enter your email" />
         </div>
         <Button
-          className="text-base font-semibold w-full"
+          className="text-base font-medium leading-6 w-full"
           onClick={setIsTypingPassword}
         >
           Sign up with email

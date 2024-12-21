@@ -30,7 +30,7 @@ const page = () => {
             <p className="font-medium text-sm">Email</p>
             <Input placeholder="Enter your email" />
           </div>
-          <Button className="text-base font-semibold w-full">
+          <Button className="text-base font-medium leading-6 w-full">
             Continue with email
           </Button>
         </div>

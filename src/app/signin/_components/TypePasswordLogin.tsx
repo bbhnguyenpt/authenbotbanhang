@@ -68,7 +68,7 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
             Forgot password?
           </Link>
         </div>
-        <Button className="text-base font-semibold w-full">Log in</Button>
+        <Button className="text-base font-medium left-6 w-full">Login</Button>
       </div>
       <GoToSignup />
       <Actions />

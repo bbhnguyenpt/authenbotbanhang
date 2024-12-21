@@ -20,15 +20,17 @@ const page = () => {
           <h1 className="text-base font-semibold">Bot Bán Hàng</h1>
         </div>
         <div className="flex flex-col gap-1">
-          <p className="font-bold text-2xl">Log in</p>
-          <p className="text-sm">Continue to Bot Bán Hàng</p>
+          <p className="font-bold text-2xl">Forgot your password?</p>
+          <p className="text-sm">
+            We’ll email instructions to reset your password.
+          </p>
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-1">
             <p className="font-medium text-sm">Email</p>
             <Input placeholder="Enter your email" />
           </div>
-          <Button className="text-base font-semibold w-full">
+          <Button className="text-base font-medium w-full">
             <Link
               href={'/signin?reset=true'}
               className="size-full"

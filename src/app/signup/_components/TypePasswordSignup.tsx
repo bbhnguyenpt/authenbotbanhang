@@ -61,11 +61,11 @@ const TypePasswordSignup: FC<TypePasswordSignupProps> = ({
         <div className="flex flex-col gap-1">
           <p className="font-medium text-sm">Confirm new password</p>
           <Input
-            placeholder="Enter your password"
+            placeholder="Confirm your password"
             type="password"
           />
         </div>
-        <Button className="text-base font-semibold w-full">
+        <Button className="text-base font-medium leading-6 w-full">
           Create Retion account
         </Button>
       </div>
