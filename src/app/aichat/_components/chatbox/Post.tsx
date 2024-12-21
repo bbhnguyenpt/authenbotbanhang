@@ -1,9 +1,7 @@
 import { formatNumber } from '@/lib/utils'
 import Image from 'next/image'
 
-import Comment, {
-  CommentProps,
-} from '@/app/comment/_components/chatbox/Comment'
+import Comment, { CommentProps } from '@/app/aichat/_components/chatbox/Comment'
 
 import { CommentProfilePicture, PostImage } from '@/public/dumb-data'
 import { Logo } from '@/public/logo'

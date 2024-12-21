@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import NavItem from '@/app/comment/_components/nav/NavItem'
+import NavItem from '@/app/aichat/_components/nav/NavItem'
 import NavIcons from '@/Svgs/NavIcons'
 
-import Ava from '@/app/comment/_components/ava.png'
+import Ava from '@/app/aichat/_components/ava.png'
 import { Logo } from '@/public/logo'
 
 function NavPost() {

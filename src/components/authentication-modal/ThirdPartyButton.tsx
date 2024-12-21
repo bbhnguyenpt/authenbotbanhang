@@ -9,6 +9,7 @@ interface ThirdPartyButtonProps {
 }
 
 const ThirdPartyButton: FC<ThirdPartyButtonProps> = ({ target }) => {
+  // Hàm này dùng biến language để render icon
   function renderIcon() {
     switch (target) {
       case 'Apple':

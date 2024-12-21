@@ -1,9 +1,9 @@
-import HeaderConversations from '@/app/comment/_components/conversations/HeaderConversations'
+import HeaderConversations from '@/app/aichat/_components/conversations/HeaderConversations'
 import UserConversation, {
   UserConversationProps,
-} from '@/app/comment/_components/conversations/UserConversation'
+} from '@/app/aichat/_components/conversations/UserConversation'
 
-import Ava from '@/app/comment/_components/ava.png'
+import Ava from '@/app/aichat/_components/ava.png'
 
 const DUMB_DATA: UserConversationProps[] = [
   {

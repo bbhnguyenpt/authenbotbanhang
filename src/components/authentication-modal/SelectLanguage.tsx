@@ -14,6 +14,7 @@ interface LanguageProps {
 }
 
 const Language: FC<LanguageProps> = ({ language }) => {
+  // Hàm này dùng biến language để render icon
   function renderIcon() {
     switch (language) {
       case 'English':
@@ -27,6 +28,7 @@ const Language: FC<LanguageProps> = ({ language }) => {
     }
   }
 
+  // Hàm này dùng biến language để render label
   function renderLanguage() {
     switch (language) {
       case 'English':

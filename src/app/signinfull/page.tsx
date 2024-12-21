@@ -12,7 +12,7 @@ import { ArrowRight } from 'lucide-react'
 const page = () => {
   return (
     <section className="size-full center-child p-[17px]">
-      <div className="modal ">
+      <div className="modal">
         <div className="flex items-center gap-2">
           <Image
             alt="logo bot ban hang"

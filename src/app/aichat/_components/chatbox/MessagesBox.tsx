@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Post from '@/app/comment/_components/chatbox/Post'
+import Post from '@/app/aichat/_components/chatbox/Post'
 import Icons from '@/Svgs/Icons'
 
 import { Logo } from '@/public/logo'
@@ -19,7 +19,7 @@ const DUMB_DATA = {
   },
 }
 
-function MessagesBox() {
+function MessagesBox({ type }: { type: 'post' | 'aisugguest' }) {
   return (
     <div className="flex-auto flex flex-col bg-[#00158106] overflow-hidden rounded-lg">
       <div className="py-2 px-3 bg-white flex items-center">
@@ -41,7 +41,7 @@ function MessagesBox() {
         <span className="cursor-pointer">{Icons.options}</span>
       </div>
       <div className="flex-auto flex justify-center items-start p-1 overflow-y-scroll no-scrollbar">
-        <Post post={DUMB_DATA.post} />
+        {type === 'post' ? <Post post={DUMB_DATA.post} /> : <>a</>}
       </div>
       {/* <span className="whitespace-pre-line line">{DUMB_DATA.post.content}</span>
       <span>Xem them</span> */}

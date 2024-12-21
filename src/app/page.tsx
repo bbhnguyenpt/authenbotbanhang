@@ -31,10 +31,10 @@ export default function Home() {
       </Button>
       <Button>
         <Link
-          href={'/comment'}
+          href={'/aichat'}
           className="size-full"
         >
-          Comment
+          Ai chat
         </Link>
       </Button>
     </div>
