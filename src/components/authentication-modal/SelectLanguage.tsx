@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import { FC } from 'react'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -5,8 +8,6 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { English, Indo, Thailan, Vietnam } from '@/public/languages'
 import { ChevronDown } from 'lucide-react'
-import Image from 'next/image'
-import { FC } from 'react'
 
 interface LanguageProps {
   language: 'English' | 'Vietnam' | 'Thailan' | 'Indo'

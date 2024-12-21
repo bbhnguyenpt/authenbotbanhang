@@ -1,5 +1,7 @@
-import React, { FC } from 'react'
-import { Button } from '../ui/button'
+import { FC } from 'react'
+
+import { Button } from '@/components/ui/button'
+
 import Icons from '@/Svgs/Icons'
 
 interface ThirdPartyButtonProps {

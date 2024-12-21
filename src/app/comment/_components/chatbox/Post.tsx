@@ -1,10 +1,14 @@
 import { formatNumber } from '@/lib/utils'
+import Image from 'next/image'
+
+import Comment, {
+  CommentProps,
+} from '@/app/comment/_components/chatbox/Comment'
+
 import { CommentProfilePicture, PostImage } from '@/public/dumb-data'
 import { Logo } from '@/public/logo'
-import Image from 'next/image'
-import Comment, { CommentProps } from './Comment'
 
-const dumb_data_comment: CommentProps[] = [
+const DUMB_DATA_COMMENT: CommentProps[] = [
   {
     user_profile: CommentProfilePicture,
     user_name: 'Trần Minh Tiến',
@@ -43,21 +47,21 @@ interface PostProps {
 
 function Post({ post }: { post: PostProps }) {
   return (
-    <div className="w-[430px] bg-white rounded-[8px] flex flex-col py-2">
+    <div className="w-[430px] bg-white rounded-lg flex flex-col py-2">
       <div className="px-3 flex items-center gap-3">
         <Image
           alt="profile picture"
           src={Logo}
           className="size-7 rounded-full border object-contain"
         />
-        <div className="flex-auto">
+        <div className="flex-auto flex flex-col gap-0">
           <p className="font-bold text-sm">Bot Bán Hàng</p>
           <span className="text-xs">
             Người đăng: <span className="font-bold">{post.publisher}</span>
           </span>
         </div>
-        <div className="h-full">
-          <span className="text-nowrap text-xs text-blue-700 cursor-pointer hover:underline">
+        <div className="h-9">
+          <span className="text-nowrap text-xs text-blue-700 leading-4 cursor-pointer hover:underline">
             Xem trên facebook
           </span>
         </div>
@@ -98,7 +102,7 @@ function Post({ post }: { post: PostProps }) {
         </span>
       </div>
       <div className="flex flex-col gap-2">
-        {dumb_data_comment.map((comment, index) => (
+        {DUMB_DATA_COMMENT.map((comment, index) => (
           <Comment
             comment={comment}
             key={index}

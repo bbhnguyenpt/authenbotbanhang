@@ -1,8 +1,11 @@
-import Ava from '../ava.png'
-import HeaderConversations from './HeaderConversations'
-import UserConversation, { UserConversationProps } from './UserConversation'
+import HeaderConversations from '@/app/comment/_components/conversations/HeaderConversations'
+import UserConversation, {
+  UserConversationProps,
+} from '@/app/comment/_components/conversations/UserConversation'
 
-const dumb_data: UserConversationProps[] = [
+import Ava from '@/app/comment/_components/ava.png'
+
+const DUMB_DATA: UserConversationProps[] = [
   {
     name: 'Trang Vũ',
     last_message: {
@@ -195,9 +198,10 @@ function Conversations() {
       <h1 className="font-bold text-2xl leading-6 px-2">Bot Bán Hàng</h1>
       <HeaderConversations />
       <div className="flex flex-col overflow-scroll no-scrollbar">
-        {dumb_data.map((conversation, index) => (
+        {DUMB_DATA.map((conversation, index) => (
           <UserConversation
             {...conversation}
+            addition={index % 3 === 1}
             key={index}
           />
         ))}

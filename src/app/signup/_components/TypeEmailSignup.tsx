@@ -1,12 +1,14 @@
+import Image from 'next/image'
+import { FC } from 'react'
+
+import ActionsSignup from '@/app/signup/_components/ActionsSignup'
+import GoToLogin from '@/app/signup/_components/GoToLogin'
 import Divider from '@/components/authentication-modal/Divider'
 import ThirdPartyButton from '@/components/authentication-modal/ThirdPartyButton'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+
 import { Logo } from '@/public/logo'
-import Image from 'next/image'
-import { FC } from 'react'
-import ActionsSignup from './ActionsSignup'
-import GoToLogin from './GoToLogin'
 
 interface TypeEmailSignupProps {
   setIsTypingPassword: () => void

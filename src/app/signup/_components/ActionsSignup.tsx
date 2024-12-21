@@ -1,5 +1,6 @@
-import Actions from '@/components/authentication-modal/Actions'
 import React from 'react'
+
+import Actions from '@/components/authentication-modal/Actions'
 
 const ActionsSignup = () => {
   return (

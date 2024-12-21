@@ -1,10 +1,11 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
+import GoToLogin from '@/app/forgotpassword/_components/GoToLogin'
 import Actions from '@/components/authentication-modal/Actions'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Logo } from '@/public/logo'
-import Image from 'next/image'
-import Link from 'next/link'
-import GoToLogin from './_components/GoToLogin'
 
 const page = () => {
   return (

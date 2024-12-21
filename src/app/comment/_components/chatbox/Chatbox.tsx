@@ -1,10 +1,11 @@
-import React from 'react'
-import MessagesBox from './MessagesBox'
-import Icons from '@/Svgs/Icons'
-import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
 
-const suggest_dumb_data = [
+import MessagesBox from '@/app/comment/_components/chatbox/MessagesBox'
+import { Input } from '@/components/ui/input'
+
+import Icons from '@/Svgs/Icons'
+
+const SUGGEST_DUMB_DATA = [
   'Hà Nội',
   'Chatbot',
   'Đã mua hàng',
@@ -20,11 +21,11 @@ function Chatbox() {
       <MessagesBox />
       <div className="flex flex-col gap-2 py-2">
         <div className="flex items-center gap-1">
-          {suggest_dumb_data.map((suggest, index) => (
+          {SUGGEST_DUMB_DATA.map((suggest, index) => (
             <span
               key={index}
               className={cn(
-                'h-6 py-1 px-2 rounded-[6px] bg-white text-xs cursor-pointer content-center text-center ',
+                'h-6 py-1 px-2 rounded-[6px] bg-white text-xs cursor-pointer content-center text-center border border-slate-200 leading-4',
                 index === 0
                   ? 'bg-orange-500 text-white'
                   : index === 1
@@ -35,6 +36,9 @@ function Chatbox() {
               {suggest}
             </span>
           ))}
+          <span className="h-6 w-[26px] text-center bg-white border border-slate-500 p-1 rounded font-semibold text-xs leading-4 text-slate-700">
+            +2
+          </span>
         </div>
         <div className="flex items-center h-12 px-4 py-2 gap-2 rounded-3xl bg-white">
           <span className="cursor-pointer">{Icons.attach}</span>

@@ -1,14 +1,16 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Logo } from '@/public/logo'
-import { ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
-import { FC } from 'react'
-import Actions from '@/components/authentication-modal/Actions'
-import GoToSignup from './GoToSignup'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
+import { FC } from 'react'
+
+import GoToSignup from '@/app/signin/_components/GoToSignup'
+import Actions from '@/components/authentication-modal/Actions'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+
+import { Logo } from '@/public/logo'
 import Icons from '@/Svgs/Icons'
+import { ArrowLeft } from 'lucide-react'
 
 interface TypePasswordLoginProps {
   setIsTypingPassword: () => void
