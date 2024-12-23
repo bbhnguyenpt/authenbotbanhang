@@ -2,7 +2,7 @@ import React from 'react'
 
 function Widget() {
   return (
-    <section className="w-[400px] bg-white flex-shrink-0 rounded-lg overflow-hidden">
+    <section className="w-[400px] bg-white rounded-lg overflow-hidden">
       <div className="py-2 px-3 content-center text-sm font-semibold leading-5 border-b border-slate-200">
         <span className="py-[2px]">Tổng quan bài viết</span>
       </div>

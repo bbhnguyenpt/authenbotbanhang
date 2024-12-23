@@ -3,7 +3,7 @@ import { ChevronDown, ChevronRight } from 'lucide-react'
 
 function AiWidget() {
   return (
-    <section className="w-[400px] flex flex-col gap-2 flex-shrink-0 overflow-y-scroll no-scrollbar">
+    <section className="w-[400px] flex flex-col gap-2 overflow-y-scroll no-scrollbar">
       <div className="bg-white flex items-center gap-3 py-1 px-3 rounded-lg">
         <span>{Icons.bell}</span>
         <div className="flex flex-col gap-0 font-medium flex-auto">

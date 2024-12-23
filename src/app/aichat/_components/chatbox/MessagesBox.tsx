@@ -4,6 +4,7 @@ import Post from '@/app/aichat/_components/chatbox/Post'
 import Icons from '@/Svgs/Icons'
 
 import { Logo } from '@/public/logo'
+import Messages from './Messages'
 
 const DUMB_DATA = {
   chat_box_name: 'PHẦN MỀM QUẢN LÝ TIN NHẮN TOÀN DIỆN DÀNH CHO CASI GÌ ĐẤY',
@@ -41,10 +42,8 @@ function MessagesBox({ type }: { type: 'post' | 'aisugguest' }) {
         <span className="cursor-pointer">{Icons.options}</span>
       </div>
       <div className="flex-auto flex justify-center items-start p-1 overflow-y-scroll no-scrollbar">
-        {type === 'post' ? <Post post={DUMB_DATA.post} /> : <>a</>}
+        {type === 'post' ? <Post post={DUMB_DATA.post} /> : <Messages />}
       </div>
-      {/* <span className="whitespace-pre-line line">{DUMB_DATA.post.content}</span>
-      <span>Xem them</span> */}
     </div>
   )
 }

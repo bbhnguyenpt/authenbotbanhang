@@ -194,7 +194,7 @@ const DUMB_DATA: UserConversationProps[] = [
 
 function Conversations() {
   return (
-    <section className="w-[360px] h-full rounded-xl bg-white flex-shrink-0 py-3 px-2 flex flex-col gap-2 ">
+    <section className="w-[360px] h-full rounded-xl bg-white py-3 px-2 flex flex-col gap-2 ">
       <h1 className="font-bold text-2xl leading-6 px-2">Bot Bán Hàng</h1>
       <HeaderConversations />
       <div className="flex flex-col overflow-scroll no-scrollbar">

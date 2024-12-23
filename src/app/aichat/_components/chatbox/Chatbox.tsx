@@ -1,9 +1,7 @@
 import { cn } from '@/lib/utils'
 
 import MessagesBox from '@/app/aichat/_components/chatbox/MessagesBox'
-import { Input } from '@/components/ui/input'
-
-import Icons from '@/Svgs/Icons'
+import InputField from './InputField'
 
 const SUGGEST_DUMB_DATA = [
   'Hà Nội',
@@ -17,9 +15,9 @@ const SUGGEST_DUMB_DATA = [
 
 function Chatbox({ type }: { type: 'post' | 'aisugguest' }) {
   return (
-    <section className="w-full flex flex-col">
+    <section className="flex-auto flex flex-col">
       <MessagesBox type={type} />
-      <div className="flex flex-col gap-2 py-2">
+      <div className="flex flex-col gap-2 py-2 w-full">
         <div className="flex items-center gap-1">
           {SUGGEST_DUMB_DATA.map((suggest, index) => (
             <span
@@ -40,25 +38,7 @@ function Chatbox({ type }: { type: 'post' | 'aisugguest' }) {
             +2
           </span>
         </div>
-        <div className="flex flex-col gap-1 px-4 py-2 rounded-xl bg-white">
-          <div className="flex">
-            <p className="size-6 p-1 rounded-full border border-slate-200 bg-white flex items-center justify-center">
-              <span className="text-base size-4  text-blue-700">
-                {Icons.loading}
-              </span>
-            </p>
-          </div>
-          <div className="flex items-center h-8 gap-2">
-            <span className="cursor-pointer">{Icons.stars}</span>
-            <span className="cursor-pointer">{Icons.attach}</span>
-            <Input
-              placeholder="Bình luận dưới tên Bot Bán Hàng"
-              className="border-none shadow-none p-0 "
-            />
-            <span className="cursor-pointer">{Icons.emoji}</span>
-            <span className="cursor-pointer">{Icons.square_slash}</span>
-          </div>
-        </div>
+        <InputField type={type} />
       </div>
     </section>
   )

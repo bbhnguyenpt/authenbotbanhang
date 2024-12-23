@@ -52,9 +52,6 @@ export default {
           '5': 'hsl(var(--chart-5))',
         },
       },
-      backgroundImage: {
-        'main-bg': "url('/bg/bg.png')",
-      },
     },
   },
   plugins: [require('tailwindcss-animate')],
