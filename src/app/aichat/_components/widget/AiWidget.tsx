@@ -1,5 +1,11 @@
 'use client'
 import Tooltip from '@/components/Tooltip'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover'
+import SettingsModal from '@/components/widget/SettingsModal'
 import Icons from '@/Svgs/Icons'
 import { ChevronDown, ChevronRight, MoreHorizontal } from 'lucide-react'
 
@@ -35,9 +41,17 @@ function AiWidget() {
         <span className="flex-auto font-semibold text-sm leading-5 text-slate-900">
           Đơn hàng
         </span>
-        <Tooltip tooltipContent="Thiết lập">
-          <MoreHorizontal />
-        </Tooltip>
+        <Popover>
+          <PopoverTrigger>
+            <Tooltip tooltipContent="Thiết lập">
+              <MoreHorizontal />
+            </Tooltip>
+          </PopoverTrigger>
+          <PopoverContent className="relative -translate-x-10 -translate-y-3 w-auto shadow-lg border-none p-0">
+            <span className="size-8 rounded rotate-45 absolute -bottom-2 right-3 bg-white z-10"></span>
+            <SettingsModal />
+          </PopoverContent>
+        </Popover>
         <ChevronRight className="text-slate-500" />
       </div>
 
