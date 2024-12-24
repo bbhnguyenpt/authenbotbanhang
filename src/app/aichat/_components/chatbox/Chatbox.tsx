@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 
 import MessagesBox from '@/app/aichat/_components/chatbox/MessagesBox'
-import InputField from './InputField'
+import InputSection from './InputSection'
 
 const SUGGEST_DUMB_DATA = [
   'Hà Nội',
@@ -38,7 +38,7 @@ function Chatbox({ type }: { type: 'post' | 'aisugguest' }) {
             +2
           </span>
         </div>
-        <InputField type={type} />
+        <InputSection type={type} />
       </div>
     </section>
   )

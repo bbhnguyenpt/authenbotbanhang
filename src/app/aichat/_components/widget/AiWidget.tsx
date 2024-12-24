@@ -1,5 +1,7 @@
+'use client'
+import Tooltip from '@/components/Tooltip'
 import Icons from '@/Svgs/Icons'
-import { ChevronDown, ChevronRight } from 'lucide-react'
+import { ChevronDown, ChevronRight, MoreHorizontal } from 'lucide-react'
 
 function AiWidget() {
   return (
@@ -33,6 +35,9 @@ function AiWidget() {
         <span className="flex-auto font-semibold text-sm leading-5 text-slate-900">
           Đơn hàng
         </span>
+        <Tooltip tooltipContent="Thiết lập">
+          <MoreHorizontal />
+        </Tooltip>
         <ChevronRight className="text-slate-500" />
       </div>
 

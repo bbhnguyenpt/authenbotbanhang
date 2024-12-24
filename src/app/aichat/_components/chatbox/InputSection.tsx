@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input'
 
 import Icons from '@/Svgs/Icons'
 import { cn } from '@/lib/utils'
-import { Textarea } from '@/components/ui/textarea'
+import MessageInput from './MessageInput'
 
 /* Test Purpose */
 const SUGGEST_DUMB_DATA = [
@@ -19,7 +19,7 @@ type STATE_TYPE = 'loading' | 'suggested' | 'translate'
 
 const TEST_STATE: STATE_TYPE[] = ['loading', 'suggested', 'translate']
 
-function InputField({ type }: { type: 'post' | 'aisugguest' }) {
+function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
   const [state, set_state] = useState<STATE_TYPE>('translate')
   const [input_value, set_input_value] = useState<string>('')
 
@@ -67,7 +67,7 @@ function InputField({ type }: { type: 'post' | 'aisugguest' }) {
     return (
       <div className="flex flex-col gap-1 px-4 py-2 rounded-xl bg-white">
         <div className="flex items-center h-8 gap-2">
-          <span className="cursor-pointer">{Icons.stars}</span>
+          <span className="cursor-pointer text-slate-400">{Icons.stars}</span>
           <span className="cursor-pointer">{Icons.attach}</span>
           <Input
             placeholder="Bình luận dưới tên Bot Bán Hàng"
@@ -83,7 +83,7 @@ function InputField({ type }: { type: 'post' | 'aisugguest' }) {
   return (
     <div className="flex flex-col gap-1 px-4 py-2 rounded-xl bg-white">
       <div className="min-h-[26px] flex gap-4 items-center relative ">
-        {/* Test Purpose */}
+        {/* Test Purpose --------------- */}
         <button
           className="absolute -top-12 right-0 border border-black px-1"
           onClick={() => {
@@ -93,26 +93,29 @@ function InputField({ type }: { type: 'post' | 'aisugguest' }) {
         >
           test
         </button>
+        {/* Test Purpose --------------- */}
         {renderAiSugguest()}
       </div>
-      <div className="flex items-center min-h-8 gap-2 text-slate-400">
+      <div className="flex items-end min-h-8 gap-2 text-slate-400 relative">
         <span
           className={cn(
-            'cursor-pointer',
+            'h-8 flex items-center cursor-pointer',
             state === 'translate' && 'text-blue-700'
           )}
         >
           {Icons.stars}
         </span>
-        <span className="cursor-pointer">{Icons.attach}</span>
-        <Textarea
-          placeholder="Bình luận dưới tên Bot Bán Hàng"
-          className="border-none shadow-none resize-none py-[6px] h-8"
-          value={input_value}
-          onChange={event => set_input_value(event.currentTarget.value)}
+        <span className="h-8 flex items-center cursor-pointer">
+          {Icons.attach}
+        </span>
+        <MessageInput
+          input_value={input_value}
+          set_input_value={set_input_value}
         />
-        <span className="cursor-pointer">{Icons.emoji}</span>
-        <span className="cursor-pointer">
+        <span className="h-8 flex items-center cursor-pointer">
+          {Icons.emoji}
+        </span>
+        <span className="h-8 flex items-center cursor-pointer">
           {input_value === '' ? Icons.square_slash : Icons.sendIcon}
         </span>
       </div>
@@ -120,4 +123,4 @@ function InputField({ type }: { type: 'post' | 'aisugguest' }) {
   )
 }
 
-export default InputField
+export default InputSection

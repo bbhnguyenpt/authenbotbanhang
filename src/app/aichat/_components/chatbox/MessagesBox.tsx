@@ -7,7 +7,8 @@ import { Logo } from '@/public/logo'
 import Messages from './Messages'
 
 const DUMB_DATA = {
-  chat_box_name: 'PHẦN MỀM QUẢN LÝ TIN NHẮN TOÀN DIỆN DÀNH CHO CASI GÌ ĐẤY',
+  chat_box_name:
+    'PHẦN MỀM QUẢN LÝ TIN NHẮN TOÀN DIỆN DÀNH CHO NGÀNH SPA, THẨM MỸ VIỆN',
   chat_box_id: '123123123123',
   chat_box_profile_picture: Logo,
   post: {
