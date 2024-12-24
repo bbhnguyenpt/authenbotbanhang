@@ -37,6 +37,14 @@ export default function Home() {
           Ai chat
         </Link>
       </Button>
+      <Button>
+        <Link
+          href={'/qrzalo'}
+          className="size-full"
+        >
+          QR Zalo
+        </Link>
+      </Button>
     </div>
   )
 }

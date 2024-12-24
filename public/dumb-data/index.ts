@@ -1,2 +1,5 @@
 export { default as PostImage } from './post_image.png'
 export { default as CommentProfilePicture } from './comment_profile_picture.png'
+export { default as QrZalo } from './qr_zalo.png'
+export { default as LogoChatbot } from './logo_chatbot.png'
+export { default as LogoZalo } from './logo_zalo.png'
