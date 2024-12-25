@@ -1,6 +1,8 @@
 import React from 'react'
 import NavQrZaloIcons from '@/Svgs/NavQrZaloIcons'
-import NavItemQrZalo, { NavItemQrZaloProps } from './NavItemQrZalo'
+import NavItemQrZalo, {
+  NavItemQrZaloProps,
+} from '@/app/qrzalo/_components/NavItemQrZalo'
 
 const NAV_QRZALO_DUMB_DATA: NavItemQrZaloProps[] = [
   {

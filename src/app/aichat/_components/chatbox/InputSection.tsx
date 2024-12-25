@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input'
 
 import Icons from '@/Svgs/Icons'
 import { cn } from '@/lib/utils'
-import MessageInput from './MessageInput'
+import MessageInput from '@/app/aichat/_components/chatbox/MessageInput'
 
 /* Test Purpose */
 const SUGGEST_DUMB_DATA = [

@@ -1,6 +1,7 @@
-import { Textarea } from '@/components/ui/textarea'
 import { ChangeEvent, KeyboardEvent, useState } from 'react'
-import PluginOptions from './PluginOptions'
+import { Textarea } from '@/components/ui/textarea'
+
+import PluginOptions from '@/app/aichat/_components/chatbox/PluginOptions'
 
 interface MessageInputProps {
   input_value: string

@@ -1,5 +1,5 @@
 import React from 'react'
-import TransferMethod from './TransferMethod'
+import TransferMethod from '@/app/upgrade-package/_components/payment-method/TransferMethod'
 import { Button } from '@/components/ui/button'
 import { RadioGroup } from '@/components/ui/radio-group'
 

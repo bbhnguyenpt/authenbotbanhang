@@ -1,5 +1,5 @@
 import Icons from '@/Svgs/Icons'
-import SettingItem, { SettingItemProps } from './SettingItem'
+import SettingItem, { SettingItemProps } from '@/components/widget/SettingItem'
 
 const SETTINGS_DUMB_DATA: SettingItemProps[] = [
   {

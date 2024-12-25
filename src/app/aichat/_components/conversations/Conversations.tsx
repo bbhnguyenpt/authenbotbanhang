@@ -1,11 +1,13 @@
 'use client'
+
+import { useState } from 'react'
+
 import HeaderConversations from '@/app/aichat/_components/conversations/HeaderConversations'
 import UserConversation, {
   UserConversationProps,
 } from '@/app/aichat/_components/conversations/UserConversation'
 
 import Ava from '@/app/aichat/_components/ava.png'
-import { useState } from 'react'
 
 const DUMB_DATA: UserConversationProps[] = [
   {

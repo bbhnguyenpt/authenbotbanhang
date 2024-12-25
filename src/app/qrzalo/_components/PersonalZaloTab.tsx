@@ -9,32 +9,35 @@ function PersonalZaloTab() {
   return (
     <TabsContent
       value="personalZalo"
-      className="flex items-center w-full gap-3"
+      className="flex items-center w-full p-2"
     >
-      <div className="center-child flex-auto flex-shrink-0">
+      <div className="center-child flex-1 px-6">
         <Image
           alt="qr zalo "
           src={QrZalo}
+          className="size-[260px] aspect-square"
         />
       </div>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col flex-1 items-center gap-2 ">
         <div className="flex flex-col items-center gap-1">
           <div className="flex items-center gap-5">
             <Image
               alt="logo chatbot"
               src={LogoChatbot}
+              className="size-10 object-contain"
             />
             <span>{Icons.loading}</span>
             <Image
               alt="logo zalo"
               src={LogoZalo}
+              className="size-10 object-contain"
             />
           </div>
-          <span className="font-semibold leading-6">
+          <span className="font-semibold text-base leading-6">
             Kết nối Bot Bán Hàng với Zalo cá nhân
           </span>
         </div>
-        <div className="text-slate-500">
+        <div className="text-slate-500 text-xs">
           <ul className="list-decimal pb-2 pl-4 border-b border-slate-200">
             <li>
               <div className="flex items-center gap-1">

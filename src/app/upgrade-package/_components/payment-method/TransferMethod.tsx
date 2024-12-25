@@ -1,6 +1,6 @@
 import { Label } from '@/components/ui/label'
 import { RadioGroupItem } from '@/components/ui/radio-group'
-import TransferInfomationItem from './TransferInfomationItem'
+import TransferInfomationItem from '@/app/upgrade-package/_components/payment-method/TransferInfomationItem'
 import Image from 'next/image'
 import { QrTransfer } from '@/public/dumb-data'
 

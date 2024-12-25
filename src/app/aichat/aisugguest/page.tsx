@@ -1,7 +1,7 @@
-import Chatbox from '../_components/chatbox/Chatbox'
-import Conversations from '../_components/conversations/Conversations'
-import NavPost from '../_components/nav/NavPost'
-import AiWidget from '../_components/widget/AiWidget'
+import Chatbox from '@/app/aichat/_components/chatbox/Chatbox'
+import Conversations from '@/app/aichat/_components/conversations/Conversations'
+import NavPost from '@/app/aichat/_components/nav/NavPost'
+import AiWidget from '@/app/aichat/_components/widget/AiWidget'
 
 function page() {
   return (

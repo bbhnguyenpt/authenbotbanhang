@@ -1,7 +1,7 @@
 import React from 'react'
-import NavModalQrZalo from './_components/NavModalQrZalo'
+import NavModalQrZalo from '@/app/qrzalo/_components/NavModalQrZalo'
 import { X } from 'lucide-react'
-import QrCodeMainContent from './_components/QrCodeMainContent'
+import QrCodeMainContent from '@/app/qrzalo/_components/QrCodeMainContent'
 
 function page() {
   return (

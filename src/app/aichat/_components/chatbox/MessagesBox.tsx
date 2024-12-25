@@ -4,7 +4,7 @@ import Post from '@/app/aichat/_components/chatbox/Post'
 import Icons from '@/Svgs/Icons'
 
 import { Logo } from '@/public/logo'
-import Messages from './Messages'
+import Messages from '@/app/aichat/_components/chatbox/Messages'
 import { ChevronDown } from 'lucide-react'
 
 const DUMB_DATA = {

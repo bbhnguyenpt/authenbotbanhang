@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 
 import GoToLogin from '@/app/forgotpassword/_components/GoToLogin'
 import Actions from '@/components/authentication-modal/Actions'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Logo } from '@/public/logo'
 
 const page = () => {

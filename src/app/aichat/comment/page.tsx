@@ -1,8 +1,7 @@
-import React from 'react'
-import NavPost from '../_components/nav/NavPost'
-import Conversations from '../_components/conversations/Conversations'
-import Chatbox from '../_components/chatbox/Chatbox'
-import Widget from '../_components/widget/Widget'
+import Chatbox from '@/app/aichat/_components/chatbox/Chatbox'
+import Conversations from '@/app/aichat/_components/conversations/Conversations'
+import NavPost from '@/app/aichat/_components/nav/NavPost'
+import Widget from '@/app/aichat/_components/widget/Widget'
 
 function page() {
   return (

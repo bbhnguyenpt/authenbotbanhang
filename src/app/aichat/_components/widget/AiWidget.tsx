@@ -1,18 +1,23 @@
 'use client'
-import Tooltip from '@/components/Tooltip'
+
+import { ChevronRight, MoreHorizontal } from 'lucide-react'
+
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
+
+import Tooltip from '@/components/Tooltip'
 import SettingsModal from '@/components/widget/SettingsModal'
+import CRMWidget from './CRMWidget'
+
 import Icons from '@/Svgs/Icons'
-import { ChevronDown, ChevronRight, MoreHorizontal } from 'lucide-react'
 
 function AiWidget() {
   return (
     <section className="w-[400px] flex flex-col gap-2 overflow-y-scroll no-scrollbar">
-      <div className="bg-white flex items-center gap-3 py-1 px-3 rounded-lg">
+      <div className="bg-white shadow-sm flex items-center gap-3 py-1 px-3 rounded-lg">
         <span>{Icons.bell}</span>
         <div className="flex flex-col gap-0 font-medium flex-auto">
           <p className="text-xs flex items-center gap-1">
@@ -26,16 +31,9 @@ function AiWidget() {
         <ChevronRight className="text-slate-500" />
       </div>
 
-      <div className="bg-white flex-auto flex flex-col gap-3 py-2 rounded-lg">
-        <div className="flex items-center gap-3 px-3 pb-2 border-b">
-          <span className="flex-auto font-semibold text-sm leading-5 text-slate-900 ">
-            CRM
-          </span>
-          <ChevronDown className="text-slate-500" />
-        </div>
-      </div>
+      <CRMWidget />
 
-      <div className="bg-white flex items-center gap-3 py-3 px-3 rounded-lg">
+      <div className="bg-white shadow-sm flex items-center gap-3 py-3 px-3 rounded-lg">
         <span className="flex-auto font-semibold text-sm leading-5 text-slate-900">
           Đơn hàng
         </span>
@@ -53,17 +51,18 @@ function AiWidget() {
         <ChevronRight className="text-slate-500" />
       </div>
 
-      <div className="bg-white flex items-center gap-3 py-3 px-3 rounded-lg">
+      <div className="bg-white shadow-sm flex items-center gap-3 py-3 px-3 rounded-lg">
         <span className="flex-auto font-semibold text-sm leading-5 text-slate-900">
           Chatbot
         </span>
         <ChevronRight className="text-slate-500" />
       </div>
 
-      <div className="bg-white flex items-center gap-3 py-3 px-3 rounded-lg">
-        <span className="flex-auto font-semibold text-sm leading-5 text-slate-900">
-          Ghi chú & Đặt lịch
-        </span>
+      <div className="bg-white shadow-sm flex items-center gap-3 py-3 px-3 rounded-lg">
+        <div className="flex-auto font-semibold text-sm leading-5 flex items-center gap-2.5">
+          <span className="text-slate-900">Ghi chú & Đặt lịch</span>
+          <span className="h-5 w-6 rounded-md bg-gray-200 center-child">2</span>
+        </div>
         <ChevronRight className="text-slate-500" />
       </div>
     </section>

@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 
 import MessagesBox from '@/app/aichat/_components/chatbox/MessagesBox'
-import InputSection from './InputSection'
+import InputSection from '@/app/aichat/_components/chatbox/InputSection'
 
 const SUGGEST_DUMB_DATA = [
   'Hà Nội',
