@@ -73,7 +73,7 @@ function PluginOptions() {
 
   return (
     <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-4 bg-white w-[528px] py-1 px-3 rounded-xl shadow-lg">
-      <div className="flex items-center justify-between py-[6px] border-b border-slate-200">
+      <div className="flex items-center justify-between py-1.5 border-b border-slate-200">
         <span className="text-sm font-semibold leading-5 text-black">
           Enter để chọn
         </span>

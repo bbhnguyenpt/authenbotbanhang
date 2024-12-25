@@ -75,7 +75,7 @@ body {
   }
 
   .modal {
-    @apply bg-white w-full max-w-[478px] shadow-xl rounded-[12px] flex flex-col gap-6 p-6 max-h-full overflow-y-scroll;
+    @apply bg-white w-full max-w-[478px] shadow-xl rounded-[12px] flex flex-col gap-6 p-6 max-h-full overflow-y-scroll no-scrollbar;
   }
 }
 

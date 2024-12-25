@@ -13,7 +13,7 @@ function SettingItem({
   show_arrow_down = false,
 }: SettingItemProps) {
   return (
-    <div className="flex items-center py-[6px] px-2 gap-3">
+    <div className="flex items-center py-1.5 px-2 gap-3">
       <span className="size-8 rounded-3xl flex items-center justify-center bg-slate-100">
         {icon}
       </span>

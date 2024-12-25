@@ -25,7 +25,7 @@ function MessagesBox({ type }: { type: 'post' | 'aisugguest' }) {
   return (
     <div className="flex-auto flex flex-col bg-[#00158106] overflow-hidden rounded-lg">
       <div className="py-2 px-3 bg-white flex items-center">
-        <div className="flex items-center gap-[10px] flex-auto">
+        <div className="flex items-center gap-2.5 flex-auto">
           <Image
             alt="profile picture"
             src={DUMB_DATA.chat_box_profile_picture}

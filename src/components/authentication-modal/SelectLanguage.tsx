@@ -42,7 +42,7 @@ const Language: FC<LanguageProps> = ({ language }) => {
     }
   }
   return (
-    <p className="flex items-center gap-3 px-3 py-[6px] cursor-pointer">
+    <p className="flex items-center gap-3 px-3 py-1.5 cursor-pointer">
       <Image
         alt="language"
         src={renderIcon()}

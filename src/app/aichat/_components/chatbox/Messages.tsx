@@ -47,7 +47,7 @@ function Messages() {
             src={CommentProfilePicture}
             className="rounded-full size-6 object-contain"
           />
-          <span className="rounded-lg p-2 flex flex-col gap-[10px] bg-white whitespace-pre-line">
+          <span className="rounded-lg p-2 flex flex-col gap-2.5 bg-white whitespace-pre-line">
             {message.content}
             {index === 3 && (
               <p className="bg-slate-200 py-1 px-2 rounded text-center text-sm leading-5">

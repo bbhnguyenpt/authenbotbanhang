@@ -61,7 +61,7 @@ function PersonalZaloTab() {
               </div>
             </li>
           </ul>
-          <div className="pt-2 flex gap-[10px]">
+          <div className="pt-2 flex gap-2.5">
             {NavQrZaloIcons.exclamation_circle}
             <span>
               Sau khi đăng nhập Zalo trên Bot Bán Hàng, vui lòng không quét mã

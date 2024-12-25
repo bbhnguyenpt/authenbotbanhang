@@ -45,6 +45,14 @@ export default function Home() {
           QR Zalo
         </Link>
       </Button>
+      <Button>
+        <Link
+          href={'/upgrade-package'}
+          className="size-full"
+        >
+          Upgrade Package
+        </Link>
+      </Button>
     </div>
   )
 }

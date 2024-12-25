@@ -39,7 +39,7 @@ function HeaderConversations() {
           <p
             key={index}
             // ref={}
-            className="flex items-center gap-1 cursor-pointer p-[6px]"
+            className="flex items-center gap-1 cursor-pointer p-1.5"
             onClick={({ currentTarget }) => {
               set_current_tab(index)
               changeMarker(currentTarget.offsetLeft, currentTarget.offsetWidth)
@@ -61,7 +61,7 @@ function HeaderConversations() {
             >
               <span
                 className={cn(
-                  'size-[14px] text-[10px] text-center content-center',
+                  'size-3.5 text-[10px] text-center content-center',
                   current_tab === index ? 'text-white' : ''
                 )}
               >
