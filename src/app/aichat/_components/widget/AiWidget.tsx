@@ -21,9 +21,7 @@ function AiWidget() {
               2
             </span>
           </p>
-          <span className="text-[10px]">
-            12:15 28/07 - Nhắc khách thanh toán
-          </span>
+          <span className="text-xs">12:15 28/07 - Nhắc khách thanh toán</span>
         </div>
         <ChevronRight className="text-slate-500" />
       </div>

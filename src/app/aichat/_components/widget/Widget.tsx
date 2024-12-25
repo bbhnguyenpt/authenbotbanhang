@@ -4,7 +4,7 @@ function Widget() {
   return (
     <section className="w-[400px] bg-white rounded-lg overflow-hidden">
       <div className="py-2 px-3 content-center text-sm font-semibold leading-5 border-b border-slate-200">
-        <span className="py-[2px]">Tổng quan bài viết</span>
+        <span className="py-0.5">Tổng quan bài viết</span>
       </div>
       <div className="h-full px-3 overflow-y-scroll no-scrollbar">
         <div className="whitespace-pre-line font-bold mb-12">

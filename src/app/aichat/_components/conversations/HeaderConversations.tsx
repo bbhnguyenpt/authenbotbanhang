@@ -55,7 +55,7 @@ function HeaderConversations() {
             </span>
             <span
               className={cn(
-                'text-[10px] rounded-[99px] py-[2px] px-1 flex items-center justify-center border-white',
+                'text-[10px] rounded-[99px] py-0.5 px-1 flex items-center justify-center border-white',
                 current_tab === index ? 'bg-red-600' : 'bg-slate-200 '
               )}
             >
@@ -73,7 +73,7 @@ function HeaderConversations() {
         <span
           ref={marker}
           className={cn(
-            'absolute bottom-0 h-[2px] bg-black transition-all',
+            'absolute bottom-0 h-0.5 bg-black transition-all',
             tracker_className
           )}
         ></span>

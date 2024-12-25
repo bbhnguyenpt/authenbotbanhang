@@ -9,7 +9,7 @@ function PersonalZaloTab() {
   return (
     <TabsContent
       value="personalZalo"
-      className="flex items-center w-full gap-10"
+      className="flex items-center w-full gap-3"
     >
       <div className="center-child flex-auto flex-shrink-0">
         <Image
@@ -35,7 +35,7 @@ function PersonalZaloTab() {
           </span>
         </div>
         <div className="text-slate-500">
-          <ul className="!list-decimal pb-2 border-b border-slate-200">
+          <ul className="list-decimal pb-2 pl-4 border-b border-slate-200">
             <li>
               <div className="flex items-center gap-1">
                 <span>
@@ -49,8 +49,9 @@ function PersonalZaloTab() {
                 <span>
                   Trên mục <b>Tìm kiếm</b>
                 </span>
-                <span>{NavQrZaloIcons.search_icon_in_text}</span> , ấn vào biểu
-                tượng QR<span>{NavQrZaloIcons.qr_icon_in_text}</span>
+                <span>{NavQrZaloIcons.search_icon_in_text}</span> , ấn vào{' '}
+                <b>biểu tượng QR</b>
+                <span>{NavQrZaloIcons.qr_icon_in_text}</span>
               </div>
             </li>
             <li>
@@ -62,7 +63,7 @@ function PersonalZaloTab() {
             </li>
           </ul>
           <div className="pt-2 flex gap-2.5">
-            {NavQrZaloIcons.exclamation_circle}
+            <span className="size-3">{NavQrZaloIcons.exclamation_circle}</span>
             <span>
               Sau khi đăng nhập Zalo trên Bot Bán Hàng, vui lòng không quét mã
               QR đăng nhập Zalo trên phiên bản Website (https://chat.zalo.me) để

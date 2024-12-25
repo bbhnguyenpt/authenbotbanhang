@@ -1,9 +1,11 @@
+'use client'
 import HeaderConversations from '@/app/aichat/_components/conversations/HeaderConversations'
 import UserConversation, {
   UserConversationProps,
 } from '@/app/aichat/_components/conversations/UserConversation'
 
 import Ava from '@/app/aichat/_components/ava.png'
+import { useState } from 'react'
 
 const DUMB_DATA: UserConversationProps[] = [
   {
@@ -193,6 +195,7 @@ const DUMB_DATA: UserConversationProps[] = [
 ]
 
 function Conversations() {
+  const [selectted_conversation, set_selectted_conversation] = useState(0)
   return (
     <section className="w-[360px] h-full rounded-xl bg-white py-3 px-2 flex flex-col gap-2 ">
       <h1 className="font-bold text-2xl leading-6 px-2">Bot Bán Hàng</h1>
@@ -201,6 +204,8 @@ function Conversations() {
         {DUMB_DATA.map((conversation, index) => (
           <UserConversation
             {...conversation}
+            is_selectted={index === selectted_conversation}
+            select_handler={() => set_selectted_conversation(index)}
             addition={index % 3 === 1}
             key={index}
           />

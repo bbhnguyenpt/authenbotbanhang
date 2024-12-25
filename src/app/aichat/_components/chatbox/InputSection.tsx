@@ -67,7 +67,7 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
     return (
       <div className="flex flex-col gap-1 px-4 py-2 rounded-xl bg-white">
         <div className="flex items-center h-8 gap-2">
-          <span className="cursor-pointer text-slate-400">{Icons.stars}</span>
+          {/* <span className="cursor-pointer text-slate-400">{Icons.stars}</span> */}
           <span className="cursor-pointer">{Icons.attach}</span>
           <Input
             placeholder="Bình luận dưới tên Bot Bán Hàng"
@@ -85,7 +85,7 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
       <div className="min-h-[26px] flex gap-4 items-center relative ">
         {/* Test Purpose --------------- */}
         <button
-          className="absolute -top-12 right-0 border border-black px-1"
+          className="absolute -top-12 right-0 border border-black px-1 opacity-0"
           onClick={() => {
             const test = Math.floor(Math.random() * 3)
             set_state(TEST_STATE[test])
@@ -105,6 +105,7 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
         >
           {Icons.stars}
         </span>
+
         <span className="h-8 flex items-center cursor-pointer">
           {Icons.attach}
         </span>

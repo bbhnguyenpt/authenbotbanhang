@@ -12,6 +12,8 @@ export interface UserConversationProps {
   }
   unread_messages?: number
   profile_picture: StaticImageData
+  is_selectted?: boolean
+  select_handler?: () => void
   blue_dot?: boolean
   red_dot?: boolean
   green_dot?: boolean
@@ -23,19 +25,32 @@ function UserConversation({
   profile_picture,
   last_message,
   unread_messages,
+  is_selectted,
+  select_handler,
   blue_dot = false,
   green_dot = false,
   red_dot = false,
   addition = false,
 }: UserConversationProps) {
   return (
-    <div className="group flex items-center pl-2 gap-1 rounded-xl cursor-pointer transition-all hover:bg-slate-200">
+    <div
+      className={cn(
+        'group flex items-center pl-2 gap-1 rounded-xl cursor-pointer transition-all hover:bg-slate-200',
+        is_selectted && 'bg-slate-200'
+      )}
+      onClick={select_handler}
+    >
       <Image
         src={profile_picture}
         alt="ava"
         className="size-10"
       />
-      <div className="flex flex-col gap-[2px] border-b border-slate-200 p-2 transition-all group-hover:border-transparent">
+      <div
+        className={cn(
+          'flex flex-col gap-0.5 border-b border-slate-200 p-2 transition-all group-hover:border-transparent',
+          is_selectted && 'border-transparent'
+        )}
+      >
         <p className="flex items-center">
           <span
             className={cn(
