@@ -55,13 +55,13 @@ function HeaderConversations() {
             </span>
             <span
               className={cn(
-                'text-[10px] rounded-[99px] py-0.5 px-1 flex items-center justify-center border-white',
+                'text-xxs rounded-[99px] py-0.5 px-1 flex items-center justify-center border-white',
                 current_tab === index ? 'bg-red-600' : 'bg-slate-200 '
               )}
             >
               <span
                 className={cn(
-                  'size-3.5 text-[10px] text-center content-center',
+                  'size-3.5 text-xxs text-center content-center',
                   current_tab === index ? 'text-white' : ''
                 )}
               >

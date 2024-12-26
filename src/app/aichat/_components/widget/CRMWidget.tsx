@@ -62,7 +62,7 @@ function CRMWidget() {
                   />
                   <div className="flex flex-col gap-0 text-sm">
                     <span>Hoàng Đức Mạnh</span>
-                    <span className="text-slate-500">BU Hà Nội</span>
+                    <span className="text-slate-500 text-xs">BU Hà Nội</span>
                   </div>
                 </div>
                 <span className="bg-green-600 text-white text-xs rounded-md center-child h-5 w-10">

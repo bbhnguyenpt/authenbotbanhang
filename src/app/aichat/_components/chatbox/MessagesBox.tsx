@@ -48,17 +48,17 @@ function MessagesBox({ type }: { type: 'post' | 'aisugguest' }) {
                 ? 'ID: ' + DUMB_DATA.chat_box_id
                 : 'Chọn nhân viên'}{' '}
               {type === 'aisugguest' && (
-                <div className="flex items-center gap-2">
+                <span className="flex items-center gap-2">
                   <ChevronDown
                     className="text-slate-500"
                     size={20}
                   />
-                  <div className="flex items-center gap-2">
+                  <span className="flex items-center gap-2">
                     {ICON_DUMB_DATA.map((icon, index) => (
                       <span key={index}>{icon}</span>
                     ))}
-                  </div>
-                </div>
+                  </span>
+                </span>
               )}
             </span>
           </p>

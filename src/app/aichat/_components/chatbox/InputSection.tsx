@@ -81,22 +81,22 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
   }
 
   return (
-    <div className="flex flex-col gap-1 px-4 py-2 rounded-xl bg-white">
-      <div className="min-h-[26px] flex gap-4 items-center relative ">
-        {/* Test Purpose --------------- */}
-        <button
-          className="absolute -top-12 right-0 border border-black px-1 opacity-0"
-          onClick={() => {
-            const test = Math.floor(Math.random() * 3)
-            set_state(TEST_STATE[test])
-          }}
-        >
-          test
-        </button>
-        {/* Test Purpose --------------- */}
+    <div className="group relative flex flex-col justify-end gap-1 px-4 py-2 h-12 rounded-xl bg-white transition-all hover:h-20">
+      {/* Test Purpose --------------- */}
+      <button
+        className="absolute -top-3 right-5 border border-black px-1 opacity-0"
+        onClick={() => {
+          const test = Math.floor(Math.random() * 3)
+          set_state(TEST_STATE[test])
+        }}
+      >
+        test
+      </button>
+      {/* Test Purpose --------------- */}
+      <div className="min-h-[26px] w-[94%] flex gap-4 items-center absolute top-2 transition-all overflow-x-scroll no-scrollbar">
         {renderAiSugguest()}
       </div>
-      <div className="flex items-end min-h-8 gap-2 text-slate-400 relative">
+      <div className="flex items-end min-h-8 gap-2 text-slate-400 z-20 bg-white">
         <span
           className={cn(
             'h-8 flex items-center cursor-pointer',

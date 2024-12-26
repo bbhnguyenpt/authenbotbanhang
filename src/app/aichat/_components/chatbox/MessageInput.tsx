@@ -29,7 +29,7 @@ function MessageInput({ input_value, set_input_value }: MessageInputProps) {
     <div className="flex-auto">
       <Textarea
         placeholder="Gửi tin nhắn đến Mike"
-        className="border-none shadow-none resize-none py-1.5 max-h-32 custom-scrollbar"
+        className="border-none shadow-none resize-none px-0 py-1.5 max-h-32 custom-scrollbar"
         value={input_value}
         rows={1}
         onChange={handleChangeInput}

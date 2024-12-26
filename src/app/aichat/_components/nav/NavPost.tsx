@@ -31,7 +31,7 @@ function NavPost() {
           src={Ava}
           className="w-9"
         />
-        <span className="absolute top-1.5 right-0 size-5 text-center translate-x-1/2 -translate-y-1/2 content-center bg-red-600 text-[10px] text-white border-2 border-white rounded-full">
+        <span className="absolute top-1.5 right-0 size-5 text-center translate-x-1/2 -translate-y-1/2 content-center bg-red-600 text-xxs text-white border-2 border-white rounded-full">
           2
         </span>
       </div>

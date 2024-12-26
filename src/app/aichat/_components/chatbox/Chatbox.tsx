@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 
-import MessagesBox from '@/app/aichat/_components/chatbox/MessagesBox'
 import InputSection from '@/app/aichat/_components/chatbox/InputSection'
+import MessagesBox from '@/app/aichat/_components/chatbox/MessagesBox'
 
 const SUGGEST_DUMB_DATA = [
   'Hà Nội',
@@ -23,7 +23,7 @@ function Chatbox({ type }: { type: 'post' | 'aisugguest' }) {
             <span
               key={index}
               className={cn(
-                'h-6 py-1 px-2 rounded-[6px] bg-white text-xs cursor-pointer content-center text-center border border-slate-200 leading-4',
+                'h-6 py-1 px-2 rounded-md bg-white text-xs cursor-pointer content-center text-center border border-slate-200 leading-4',
                 index === 0
                   ? 'bg-orange-500 text-white'
                   : index === 1

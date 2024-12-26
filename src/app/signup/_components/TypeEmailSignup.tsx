@@ -30,9 +30,12 @@ const TypeEmailSignup: FC<TypeEmailSignupProps> = ({ setIsTypingPassword }) => {
         <p className="text-sm">One last step before starting your free trial</p>
       </div>
       <div className="flex flex-col gap-3">
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 ">
           <p className="font-medium text-sm">Email</p>
-          <Input placeholder="Enter your email" />
+          <Input
+            placeholder="Enter your email"
+            className="text-2xl"
+          />
         </div>
         <Button
           className="text-base font-medium leading-6 w-full"

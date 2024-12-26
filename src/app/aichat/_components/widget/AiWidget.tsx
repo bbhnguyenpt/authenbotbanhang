@@ -20,7 +20,7 @@ function AiWidget() {
       <div className="bg-white shadow-sm flex items-center gap-3 py-1 px-3 rounded-lg">
         <span>{Icons.bell}</span>
         <div className="flex flex-col gap-0 font-medium flex-auto">
-          <p className="text-xs flex items-center gap-1">
+          <p className="text-xxs flex items-center gap-1">
             <span>Ghim - Nhắc lịch - Cảnh báo </span>
             <span className="bg-red-600 rounded-full size-3 text-white text-[8px] leading-3 text-center content-center font-medium">
               2

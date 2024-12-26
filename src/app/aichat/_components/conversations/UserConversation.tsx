@@ -79,7 +79,7 @@ function UserConversation({
             {(last_message.is_my_message ? 'Bạn: ' : '') + last_message.message}
           </span>
           {unread_messages !== 0 && (
-            <span className="text-[10px] bg-red-600 font-medium rounded-full size-5 flex items-center justify-center flex-shrink-0 text-white">
+            <span className="text-xxs bg-red-600 font-medium rounded-full size-5 flex items-center justify-center flex-shrink-0 text-white">
               {unread_messages}
             </span>
           )}
