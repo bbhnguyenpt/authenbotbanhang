@@ -12,7 +12,7 @@ function PaymentInfomation({ set_show_bill }: PaymentInfomationProps) {
     <div className="flex gap-2.5 text-sm ">
       <div className="flex-1 py-3 flex flex-col gap-2.5">
         <span>
-          <b>Thông tin gói</b>
+          <b className="font-semibold">Thông tin gói</b>
         </span>
         <span>
           Gói nâng cấp:
@@ -20,11 +20,11 @@ function PaymentInfomation({ set_show_bill }: PaymentInfomationProps) {
         </span>
         <span>
           Thời gian:
-          <b> 1 Tháng</b>
+          <b className="font-semibold"> 1 Tháng</b>
         </span>
         <span>
           Giá:
-          <b> 480.000đ</b>
+          <b className="font-semibold"> 480.000đ</b>
         </span>
       </div>
       <div className="flex-1 py-3 flex flex-col gap-2.5">
@@ -68,7 +68,7 @@ function PaymentInfomation({ set_show_bill }: PaymentInfomationProps) {
         <div className="flex flex-col gap-2.5">
           <span>
             Tổng tiền:
-            <b> 480.000đ</b>
+            <b className="font-semibold"> 480.000đ</b>
           </span>
           <ul className="list-disc pl-5 text-xs">
             <li>
@@ -90,7 +90,7 @@ function PaymentInfomation({ set_show_bill }: PaymentInfomationProps) {
         </div>
         <span>
           Số tiền thanh toán:
-          <b> 480.000đ</b>
+          <b className="font-semibold"> 480.000đ</b>
         </span>
       </div>
     </div>

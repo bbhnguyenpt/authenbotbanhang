@@ -5,11 +5,13 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
-import { Dolla_Picture } from '@/public/dumb-data'
-import Icons from '@/Svgs/Icons'
 import Image from 'next/image'
 import { ReactNode } from 'react'
+
 import Comment from './Comment'
+
+import Icons from '@/Svgs/Icons'
+import { Dolla_Picture } from '@/public/dumb-data'
 import { DUMB_DATA_COMMENT } from './Post'
 
 interface CommentModalProps {

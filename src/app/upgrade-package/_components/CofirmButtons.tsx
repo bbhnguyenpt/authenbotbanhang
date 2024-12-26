@@ -25,7 +25,7 @@ function CofirmButtons({ set_show_payment, show_payment }: CofirmButtonsProps) {
       <Button
         size={'sm'}
         className={cn(
-          'py-2 px-4 h-9 font-medium',
+          'py-2 px-4 h-9 text-sm font-medium',
           show_payment
             ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
             : 'bg-blue-700 hover:bg-blue-600'

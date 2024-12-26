@@ -2,10 +2,10 @@
 
 import { useState } from 'react'
 import { Input } from '@/components/ui/input'
-
-import Icons from '@/Svgs/Icons'
 import { cn } from '@/lib/utils'
+
 import MessageInput from '@/app/aichat/_components/chatbox/MessageInput'
+import Icons from '@/Svgs/Icons'
 
 /* Test Purpose */
 const SUGGEST_DUMB_DATA = [

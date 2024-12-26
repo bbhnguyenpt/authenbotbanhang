@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils'
-import { CommentProfilePicture } from '@/public/dumb-data'
 import Image from 'next/image'
+
+import { CommentProfilePicture } from '@/public/dumb-data'
 
 type MESSAGE_ROLE = 'user' | 'bot' | 'system'
 interface MESSAGE {

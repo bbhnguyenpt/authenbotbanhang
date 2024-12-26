@@ -13,7 +13,7 @@ function TransferMethod() {
           id="transfer"
         />
         <Label
-          className="cursor-pointer"
+          className="cursor-pointer text-sm font-medium"
           htmlFor="transfer"
         >
           Chuyển khoản
