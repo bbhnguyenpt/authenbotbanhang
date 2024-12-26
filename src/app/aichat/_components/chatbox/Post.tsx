@@ -5,8 +5,9 @@ import Comment, { CommentProps } from '@/app/aichat/_components/chatbox/Comment'
 
 import { CommentProfilePicture, PostImage } from '@/public/dumb-data'
 import { Logo } from '@/public/logo'
+import CommentModal from './CommentModal'
 
-const DUMB_DATA_COMMENT: CommentProps[] = [
+export const DUMB_DATA_COMMENT: CommentProps[] = [
   {
     user_profile: CommentProfilePicture,
     user_name: 'Trần Minh Tiến',
@@ -86,12 +87,14 @@ function Post({ post }: { post: PostProps }) {
             {formatNumber(post.reaction_count)}
           </span>
         </span>
-        <span>
-          Bình luận:{' '}
-          <span className="font-semibold">
-            {formatNumber(post.reaction_count)}
+        <CommentModal>
+          <span>
+            Bình luận:{' '}
+            <span className="font-semibold">
+              {formatNumber(post.reaction_count)}
+            </span>
           </span>
-        </span>
+        </CommentModal>
         <span>
           Chia sẻ:{' '}
           <span className="font-semibold">

@@ -116,7 +116,7 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
         <span className="h-8 flex items-center cursor-pointer">
           {Icons.emoji}
         </span>
-        <span className="h-8 flex items-center cursor-pointer">
+        <span className="h-8 flex items-center cursor-pointer text-slate-900">
           {input_value === '' ? Icons.square_slash : Icons.sendIcon}
         </span>
       </div>

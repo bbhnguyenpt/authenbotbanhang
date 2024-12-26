@@ -18,7 +18,7 @@ function Comment({ comment }: { comment: CommentProps }) {
           className="size-10 rounded-full object-contain "
         />
         <div className="flex flex-col gap-0.5 w-full ">
-          <div className="py-1 px-2 rounded-xl bg-slate-100">
+          <div className="py-1 px-2 rounded-xl flex flex-col gap-0 bg-slate-100">
             <p className="flex items-center">
               <span className="text-sm font-bold flex-auto cursor-pointer hover:underline">
                 {comment.user_name}
@@ -46,7 +46,7 @@ function Comment({ comment }: { comment: CommentProps }) {
             className="size-10 rounded-full object-contain "
           />
           <div className="flex flex-col gap-0.5 w-full ">
-            <div className="py-1 px-2 rounded-xl bg-slate-100">
+            <div className="py-1 px-2 rounded-xl flex flex-col gap-0 bg-slate-100">
               <p className="flex items-center">
                 <span className="text-sm font-bold flex-auto cursor-pointer hover:underline">
                   {sub_comment.user_name}
