@@ -7,7 +7,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className="flex items-center justify-between rounded-lg bg-white py-3 px-6">
+    <div className="flex items-center flex-shrink-0 justify-between rounded-lg bg-white py-3 px-6">
       <div className="flex items-center gap-3">
         <Image
           alt="logo"
