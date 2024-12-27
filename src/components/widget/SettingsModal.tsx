@@ -26,12 +26,21 @@ function SettingsModal() {
     <div className="w-52 rounded-lg z-[60] shadow-sm">
       <div className="p-1 flex flex-col gap-1">
         {SETTINGS_DUMB_DATA.map((setting, index) => (
-          <SettingItem
+          <div
             key={index}
-            icon={setting.icon}
-            label={setting.label}
-            show_arrow_down={setting.show_arrow_down}
-          />
+            className="flex flex-col gap-0"
+          >
+            {index === SETTINGS_DUMB_DATA.length - 1 && (
+              <span className="flex pt-1 pb-2 px-3">
+                <span className="bg-slate-200 h-[1px] w-full"></span>
+              </span>
+            )}
+            <SettingItem
+              icon={setting.icon}
+              label={setting.label}
+              show_arrow_down={setting.show_arrow_down}
+            />
+          </div>
         ))}
       </div>
     </div>

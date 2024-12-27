@@ -18,7 +18,7 @@ function CofirmButtons({ set_show_payment, show_payment }: CofirmButtonsProps) {
       <Button
         size={'sm'}
         variant={'secondary'}
-        className="text-slate-500 py-2 px-4 h-9"
+        className="text-slate-500 text-sm py-2 px-4 h-9"
       >
         Đóng
       </Button>

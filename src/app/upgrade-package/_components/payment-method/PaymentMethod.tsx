@@ -20,7 +20,7 @@ function PaymentMethod() {
         <div>
           <Button
             size={'sm'}
-            className="bg-blue-700 py-2 px-4 hover:bg-blue-600 h-9"
+            className="bg-blue-700 py-2 px-4 text-sm hover:bg-blue-600 h-9"
           >
             Hỗ trợ thanh toán
           </Button>

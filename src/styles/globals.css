@@ -171,6 +171,27 @@ body {
   );
 }
 
+.bg-test {
+  background: linear-gradient(
+    90deg,
+    #eeedf3 0%,
+    #efeef4 1.55%,
+    #efecf3 11.9%,
+    #f0edf4 12.86%,
+    #f2ecf4 42.98%,
+    #efecf3 60.83%,
+    #eeebf6 63.1%,
+    #ebeaf9 70.36%,
+    #e8e8f8 76.19%,
+    #e6e7f8 78.1%,
+    #e4e5f9 81.79%,
+    #e3e4f8 86.55%,
+    #e2e3f8 87.5%,
+    #e0e0fc 91.19%,
+    #dcdffc 100%
+  );
+}
+
 .qrzalo-modal {
   background: linear-gradient(
     90deg,

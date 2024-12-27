@@ -11,6 +11,9 @@ import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
 import SocialMedia from './_components/SocialMedia'
 import Members from './_components/Members'
+import Conversation from './_components/Conversation'
+import NotificationAndSound from './_components/NotificationAndSound'
+import CustomerInfomation from './_components/CustomerInfomation'
 
 function MainSetting() {
   return (
@@ -47,6 +50,12 @@ function MainSetting() {
       <SocialMedia />
 
       <Members />
+
+      <Conversation />
+
+      <NotificationAndSound />
+
+      <CustomerInfomation />
     </div>
   )
 }
