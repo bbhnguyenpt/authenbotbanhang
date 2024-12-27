@@ -53,6 +53,14 @@ export default function Home() {
           Upgrade Package
         </Link>
       </Button>
+      <Button>
+        <Link
+          href={'/general-settings'}
+          className="size-full"
+        >
+          General Settings
+        </Link>
+      </Button>
     </div>
   )
 }
