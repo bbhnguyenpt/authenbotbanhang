@@ -1,5 +1,4 @@
-import { ChangeEvent, KeyboardEvent, useState } from 'react'
-import { Textarea } from '@/components/ui/textarea'
+import { KeyboardEvent, useState } from 'react'
 
 import PluginOptions from '@/app/aichat/_components/chatbox/PluginOptions'
 
@@ -10,31 +9,34 @@ interface MessageInputProps {
 
 function MessageInput({ input_value, set_input_value }: MessageInputProps) {
   const [show_plugins, set_show_plugins] = useState(false)
-  function handleChangeInput(event: ChangeEvent<HTMLTextAreaElement>) {
-    event.target.style.height = 'inherit'
-    event.target.style.height = `${event.target.scrollHeight}px`
-    set_input_value(event.currentTarget.value)
-  }
 
-  function handleKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+  function handleKeyDown(event: KeyboardEvent<HTMLSpanElement>) {
     if (event.key === '/') {
       set_show_plugins(true)
     }
     if (event.key === ' ' || event.key === 'Spacebar') {
       set_show_plugins(false)
     }
+    if (event.key === 'Backspace' || event.key === 'Delete') {
+      // set_show_plugins(false)
+      console.log(input_value === '')
+    }
+  }
+
+  function handleInput(event: KeyboardEvent<HTMLSpanElement>) {
+    console.log(event.currentTarget.innerText.length)
+    set_input_value(event.currentTarget.innerText)
   }
 
   return (
-    <div className="flex-auto">
-      <Textarea
-        placeholder="Gửi tin nhắn đến Mike"
-        className="border-none shadow-none resize-none px-0 py-1.5 max-h-32 custom-scrollbar"
-        value={input_value}
-        rows={1}
-        onChange={handleChangeInput}
+    <div className="flex-auto flex items-center relative">
+      <span
+        className="border-none shadow-none w-full min-h-0 py-1.5 text-sm max-h-[120px] focus:outline-none overflow-x-hidden overflow-y-auto custom-scrollbar flex flex-col justify-center"
+        contentEditable
+        suppressContentEditableWarning={true}
+        onInput={handleInput}
         onKeyDown={handleKeyDown}
-      />
+      ></span>
       {show_plugins && <PluginOptions />}
     </div>
   )

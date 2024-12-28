@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
 import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
+import { useState } from 'react'
 
 import MessageInput from '@/app/aichat/_components/chatbox/MessageInput'
 import Icons from '@/Svgs/Icons'
@@ -81,22 +81,28 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
   }
 
   return (
-    <div className="group relative flex flex-col justify-end gap-1 px-4 py-2 h-12 rounded-xl bg-white transition-all hover:h-20">
+    <div
+      className={cn(
+        'relative flex flex-col justify-end gap-1 px-4 py-2 rounded-xl bg-white transition-all hover:pt-10',
+        input_value != '' && 'pt-10'
+      )}
+    >
       {/* Test Purpose --------------- */}
       <button
-        className="absolute -top-3 right-5 border border-black px-1 opacity-0"
+        className="absolute -top-3 right-5 border border-black px-1 opacity-1"
         onClick={() => {
           const test = Math.floor(Math.random() * 3)
           set_state(TEST_STATE[test])
+          console.log(input_value)
         }}
       >
         test
       </button>
       {/* Test Purpose --------------- */}
-      <div className="min-h-[26px] w-[94%] flex gap-4 items-center absolute top-2 transition-all overflow-x-scroll no-scrollbar">
+      <div className="min-h-7 w-[94%] flex gap-4 items-center absolute top-2 transition-all overflow-x-scroll no-scrollbar">
         {renderAiSugguest()}
       </div>
-      <div className="flex items-end min-h-8 gap-2 text-slate-400 z-20 bg-white">
+      <div className="flex items-end gap-2 text-slate-400 z-20 bg-white">
         <span
           className={cn(
             'h-8 flex items-center cursor-pointer',
@@ -109,15 +115,18 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
         <span className="h-8 flex items-center cursor-pointer">
           {Icons.attach}
         </span>
+
         <MessageInput
           input_value={input_value}
           set_input_value={set_input_value}
         />
+
         <span className="h-8 flex items-center cursor-pointer">
           {Icons.emoji}
         </span>
+
         <span className="h-8 flex items-center cursor-pointer text-slate-900">
-          {input_value === '' ? Icons.square_slash : Icons.sendIcon}
+          {!input_value.length ? Icons.square_slash : Icons.sendIcon}
         </span>
       </div>
     </div>

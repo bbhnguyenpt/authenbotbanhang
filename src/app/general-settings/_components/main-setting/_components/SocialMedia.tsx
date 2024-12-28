@@ -19,7 +19,7 @@ function SocialMedia() {
         <div className="flex justify-between">
           <span className="text-sm font-medium">Trang (4/4)</span>
           <Button
-            className="bg-blue-600 hover:bg-blue-500 py-2 px-4 h-7"
+            className="bg-blue-600 text-sm hover:bg-blue-500 py-2 px-4 h-7"
             size={'sm'}
           >
             Thêm
