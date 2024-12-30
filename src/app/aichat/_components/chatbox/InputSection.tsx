@@ -89,11 +89,10 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
     >
       {/* Test Purpose --------------- */}
       <button
-        className="absolute -top-3 right-5 border border-black px-1 opacity-1"
+        className="absolute -top-3 right-5 border border-black px-1 opacity-0"
         onClick={() => {
           const test = Math.floor(Math.random() * 3)
           set_state(TEST_STATE[test])
-          console.log(input_value)
         }}
       >
         test
