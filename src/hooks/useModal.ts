@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-type ModalType = 'none' | 'delete-group'
+type ModalType = 'none' | 'delete-group' | 'create-group' | 'modify-group'
 
 interface ModalStore {
   show_modal: boolean

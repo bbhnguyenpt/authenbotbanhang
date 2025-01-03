@@ -1,11 +1,11 @@
-import React from 'react'
-import { Button } from '../../ui/button'
+import { DialogContent } from '@/components/ui/dialog'
 import useModal from '@/hooks/useModal'
+import { Button } from '../../ui/button'
 
 function DeleteGroupModal() {
   const { close_modal } = useModal()
   return (
-    <div className="flex flex-col gap-4 p-6 w-[458px]">
+    <DialogContent className="flex flex-col gap-4 p-6 max-w-[458px]">
       <div className="flex flex-col gap-0">
         <span className="text-lg font-semibold">Xác nhận xóa nhóm</span>
         <span className="py-3 text-sm">
@@ -28,7 +28,7 @@ function DeleteGroupModal() {
           Xóa
         </Button>
       </div>
-    </div>
+    </DialogContent>
   )
 }
 

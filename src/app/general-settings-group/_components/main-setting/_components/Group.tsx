@@ -45,6 +45,7 @@ function Group() {
           <Button
             className="bg-blue-600 text-sm hover:bg-blue-500 py-2 px-4 h-7"
             size={'sm'}
+            onClick={() => open_modal('create-group')}
           >
             Thêm
           </Button>
@@ -125,6 +126,7 @@ function Group() {
                 <Button
                   size={'sm'}
                   className="bg-slate-200 text-black py-2 px-4 hover:bg-slate-300"
+                  onClick={() => open_modal('modify-group')}
                 >
                   {GeneralSettingIcons.pencil_square}{' '}
                   <span className="text-sm font-medium">Sửa Nhóm 1</span>
