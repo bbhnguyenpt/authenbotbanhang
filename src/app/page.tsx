@@ -61,6 +61,14 @@ export default function Home() {
           General Settings
         </Link>
       </Button>
+      <Button>
+        <Link
+          href={'/general-settings-group'}
+          className="size-full"
+        >
+          Group
+        </Link>
+      </Button>
     </div>
   )
 }

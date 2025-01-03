@@ -83,7 +83,7 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
   return (
     <div
       className={cn(
-        'relative flex flex-col justify-end gap-1 px-4 py-2 rounded-xl bg-white transition-all hover:pt-10',
+        'relative flex flex-col justify-end gap-1 px-4 py-2 rounded-3xl hover:rounded-lg bg-white transition-all hover:pt-10',
         input_value != '' && 'pt-10'
       )}
     >
