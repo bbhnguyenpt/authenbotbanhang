@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
-
 export default function Home() {
   return (
     <div className="flex items-center justify-center p-4 gap-4 h-full">

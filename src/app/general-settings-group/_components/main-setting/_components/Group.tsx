@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import useModal from '@/hooks/useModal'
 import { CommentProfilePicture } from '@/public/dumb-data'
 import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
 import Image from 'next/image'
@@ -17,6 +18,7 @@ const SOCIAL_MEDIA_DUMB_DATA = [
 
 function Group() {
   const [show_group, set_show_group] = useState(false)
+  const { open_modal } = useModal()
   return (
     <div className="relative">
       <button
@@ -130,6 +132,7 @@ function Group() {
                 <Button
                   size={'sm'}
                   className="bg-transparent border-none shadow-none text-red-500 py-2 px-4 hover:bg-slate-50"
+                  onClick={() => open_modal('delete-group')}
                 >
                   <span className="text-sm font-medium">Xóa nhóm</span>
                 </Button>

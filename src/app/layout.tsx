@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import '@/styles/globals.css'
+import Modal from '@/components/modal/Modal'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={`${inter.variable} ${geistMono.variable} ${geistSans.variable} antialiased bg-gradient-main h-screen`}
       >
         {children}
+        <Modal />
       </body>
     </html>
   )
