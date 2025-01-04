@@ -1,29 +1,36 @@
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
+import {
+  ChatBubbleLeftRightIcon,
+  InboxStackIcon,
+  SwatchIcon,
+  UserCircleIcon,
+  UsersIcon,
+} from '@heroicons/react/20/solid'
+
 import ConfigurationSetting, {
   ConfigurationSettingProps,
-} from './ConfigurationSetting'
+} from '@/app/general-settings/_components/main-setting/_components/ConfigurationSetting'
 
 const CONVERSATION_DUMB_DATA: ConfigurationSettingProps[] = [
   {
-    icon: GeneralSettingIcons.inbox_stack,
+    icon: <InboxStackIcon />,
     name: 'Chế độ hiển thị hội thoại',
     description: 'Thiết lập hiển thị hội thoại',
     select_placeholder: 'Hội thoại chưa đọc',
   },
   {
-    icon: GeneralSettingIcons.swatch,
+    icon: <SwatchIcon />,
     name: 'Chế độ hiển thị gắn nhãn',
     description: 'Thiết lập chế độ hiển thị gắn nhãn trên hội thoại',
     select_placeholder: 'Hiện chấm màu có chú giải',
   },
   {
-    icon: GeneralSettingIcons.users_solid,
+    icon: <UsersIcon />,
     name: 'Hiện hội thoại theo nhân viên chỉ định',
     description:
-      'Khi bật chế độ này, hệ thống chỉ hiện ra hội thoại cho nhân viên được chỉ định. \nĐối với Quản trị viên vẫn xem được toàn bộ hội thoại.',
+      'Khi bật chế độ này, hệ thống chỉ hiện ra hội thoại cho nhân viên được chỉ định. /nĐối với Quản trị viên vẫn xem được toàn bộ hội thoại.',
   },
   {
-    icon: GeneralSettingIcons.user_circle,
+    icon: <UserCircleIcon />,
     name: 'Hiện ảnh đại diện của trang',
     description: 'Hiện ảnh đại diện của trang trên hội thoại',
   },
@@ -32,7 +39,7 @@ const CONVERSATION_DUMB_DATA: ConfigurationSettingProps[] = [
 function Conversation() {
   return (
     <div>
-      <span>{GeneralSettingIcons.bubble_chat}</span>
+      <ChatBubbleLeftRightIcon className="size-5" />
       <div className="flex-auto flex flex-col gap-1">
         <div className="flex flex-col gap-0 justify-between pb-3">
           <span className="text-sm font-semibold">Hội thoại</span>

@@ -2,9 +2,9 @@
 
 import { Dialog, DialogTitle } from '@/components/ui/dialog'
 import useModal from '@/hooks/useModal'
-import DeleteGroupModal from './delete-group/DeleteGroupModal'
-import CreateGroupModal from './create-group/CreateGroupModal'
-import ModifyGroupModal from './modify-group/CreateGroupModal'
+import DeleteGroupModal from '@/components/modal/delete-group/DeleteGroupModal'
+import CreateGroupModal from '@/components/modal/create-group/CreateGroupModal'
+import ModifyGroupModal from '@/components/modal/modify-group/ModifyGroupModal'
 
 function Modal() {
   const { type_modal, show_modal } = useModal()

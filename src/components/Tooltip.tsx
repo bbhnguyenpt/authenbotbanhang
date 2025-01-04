@@ -4,6 +4,7 @@ function Tooltip({
   children,
   tooltipContent,
 }: {
+  /**Element khi hover sẽ hiện tooltip */
   children: ReactNode
   tooltipContent: string
 }) {

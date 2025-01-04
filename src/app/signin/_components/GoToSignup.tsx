@@ -1,6 +1,5 @@
+import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
-
-import { ArrowRight } from 'lucide-react'
 
 const GoToSignup = () => {
   return (
@@ -10,7 +9,7 @@ const GoToSignup = () => {
         href={'/signup'}
         className="flex items-center gap-1 text-blue-700 cursor-pointer hover:underline"
       >
-        Get Started <ArrowRight size={16} />
+        Get Started <ArrowRightIcon className="size-4" />
       </Link>
     </div>
   )

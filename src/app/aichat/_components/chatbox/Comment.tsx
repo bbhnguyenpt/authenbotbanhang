@@ -1,10 +1,15 @@
 import Image, { StaticImageData } from 'next/image'
 
 export interface CommentProps {
+  /**Ảnh đại diện người bình luận */
   user_profile: StaticImageData
+  /**Tên người bình luận */
   user_name: string
+  /**Thời gian bình luận */
   comment_time: string
+  /**Nội dung bình luận */
   content: string
+  /**Mảng bình luận trả lời*/
   subComment?: Omit<CommentProps, 'subComment'>[]
 }
 

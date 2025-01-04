@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
+import { BriefcaseIcon } from '@heroicons/react/20/solid'
 
 interface InfomationTagProps {
   label: string
@@ -53,7 +53,7 @@ const NOTIFICATIONANDSOUND_DUMB_DATA: InfomationTagProps[] = [
 function CustomerInfomation() {
   return (
     <div>
-      <span>{GeneralSettingIcons.briefcase}</span>
+      <BriefcaseIcon className="size-5" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <span className="text-sm font-medium">Thông tin khách hàng</span>

@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input'
 
 import { Logo } from '@/public/logo'
 import Icons from '@/Svgs/Icons'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 
 interface TypePasswordLoginProps {
   setIsTypingPassword: () => void
@@ -37,7 +37,7 @@ const TypePasswordLogin: FC<TypePasswordLoginProps> = ({
           className="font-bold text-2xl flex items-center gap-2 cursor-pointer"
           onClick={setIsTypingPassword}
         >
-          <ArrowLeft />
+          <ArrowLeftIcon className="size-6" />
           Log in
         </p>
         <p className="text-sm">Continue to Bot Bán Hàng</p>

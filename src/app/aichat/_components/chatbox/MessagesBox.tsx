@@ -3,9 +3,16 @@ import Image from 'next/image'
 import Post from '@/app/aichat/_components/chatbox/Post'
 import Icons from '@/Svgs/Icons'
 
-import { Logo } from '@/public/logo'
 import Messages from '@/app/aichat/_components/chatbox/Messages'
+import { Logo } from '@/public/logo'
+import {
+  CakeIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from '@heroicons/react/24/solid'
 import { ChevronDown } from 'lucide-react'
+import { ReactNode } from 'react'
 
 const DUMB_DATA = {
   chat_box_name:
@@ -22,11 +29,11 @@ const DUMB_DATA = {
   },
 }
 
-const ICON_DUMB_DATA = [
-  Icons.header_messages_box_phone,
-  Icons.header_messages_box_location,
-  Icons.header_messages_box_cake,
-  Icons.header_messages_box_message,
+const ICON_DUMB_DATA: { icon: ReactNode }[] = [
+  { icon: <PhoneIcon /> },
+  { icon: <MapPinIcon /> },
+  { icon: <CakeIcon /> },
+  { icon: <EnvelopeIcon /> },
 ]
 
 function MessagesBox({ type }: { type: 'post' | 'aisugguest' }) {
@@ -54,8 +61,8 @@ function MessagesBox({ type }: { type: 'post' | 'aisugguest' }) {
                     size={20}
                   />
                   <span className="flex items-center gap-2">
-                    {ICON_DUMB_DATA.map((icon, index) => (
-                      <span key={index}>{icon}</span>
+                    {ICON_DUMB_DATA.map((item, index) => (
+                      <span key={index}>{item.icon}</span>
                     ))}
                   </span>
                 </span>

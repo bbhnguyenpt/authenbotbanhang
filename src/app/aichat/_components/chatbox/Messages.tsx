@@ -4,9 +4,13 @@ import Image from 'next/image'
 import { CommentProfilePicture } from '@/public/dumb-data'
 
 type MESSAGE_ROLE = 'user' | 'bot' | 'system'
+
 interface MESSAGE {
+  /**Hiển thị tin nhắn do ai gửi */
   role: MESSAGE_ROLE
+  /**Nội dung tin nhắn */
   content: string
+  /**Thời gian gửi tin nhắn */
   send_time?: string
 }
 

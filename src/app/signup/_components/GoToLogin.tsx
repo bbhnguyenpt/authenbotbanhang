@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import React from 'react'
 
-import { ArrowRight } from 'lucide-react'
+import { ArrowRightIcon } from '@heroicons/react/24/solid'
 
 const GoToLogin = () => {
   return (
@@ -11,7 +10,7 @@ const GoToLogin = () => {
         href={'/signin'}
         className="flex items-center gap-1 text-blue-700 cursor-pointer hover:underline"
       >
-        Log in <ArrowRight size={16} />
+        Log in <ArrowRightIcon className="size-4" />
       </Link>
     </div>
   )

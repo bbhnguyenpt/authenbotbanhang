@@ -1,13 +1,14 @@
 import Image from 'next/image'
 
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { ArrowRightIcon } from '@heroicons/react/24/solid'
+
 import Actions from '@/components/authentication-modal/Actions'
 import Divider from '@/components/authentication-modal/Divider'
 import ThirdPartyButton from '@/components/authentication-modal/ThirdPartyButton'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 
 import { Logo } from '@/public/logo'
-import { ArrowRight } from 'lucide-react'
 
 const page = () => {
   return (
@@ -43,7 +44,7 @@ const page = () => {
         <div className="flex text-sm gap-3 items-center">
           <span>New to Bot Bán Hàng?</span>
           <span className="flex items-center gap-1 text-blue-700">
-            Get Started <ArrowRight size={16} />
+            Get Started <ArrowRightIcon className="size-4" />
           </span>
         </div>
         <Actions />

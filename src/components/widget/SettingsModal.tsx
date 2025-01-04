@@ -1,22 +1,28 @@
-import Icons from '@/Svgs/Icons'
+import {
+  Cog8ToothIcon,
+  RectangleStackIcon,
+  Square3Stack3DIcon,
+  Squares2X2Icon,
+} from '@heroicons/react/24/solid'
+
 import SettingItem, { SettingItemProps } from '@/components/widget/SettingItem'
 
 const SETTINGS_DUMB_DATA: SettingItemProps[] = [
   {
-    icon: Icons.squaresStack,
+    icon: <Square3Stack3DIcon />,
     label: 'Chỉnh sửa vị trí',
   },
   {
-    icon: Icons.rectangleStack,
+    icon: <RectangleStackIcon />,
     label: 'Luôn hiển thị',
     show_arrow_down: true,
   },
   {
-    icon: Icons.setting,
+    icon: <Cog8ToothIcon />,
     label: 'Cài đặt ứng dụng',
   },
   {
-    icon: Icons.square2x2,
+    icon: <Squares2X2Icon />,
     label: 'Chợ ứng dụng',
   },
 ]

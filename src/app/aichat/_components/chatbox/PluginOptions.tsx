@@ -46,6 +46,7 @@ const PLUGINS_DUMB_DATA = [
 function PluginOptions() {
   const [selectted_plugin, set_selectted_plugin] = useState<number>(0)
 
+  /**Hàm nhận mũi tên lên xuống để chọn plugin */
   function handleSelectPlugin(event: KeyboardEvent) {
     if (event.key === 'ArrowDown') {
       set_selectted_plugin(selectted_plugin => {

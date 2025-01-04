@@ -3,17 +3,21 @@ import { create } from 'zustand'
 type ModalType = 'none' | 'delete-group' | 'create-group' | 'modify-group'
 
 interface ModalStore {
+  /**Trạng thái hiển thị của modal */
   show_modal: boolean
+  /**Kiểu modal */
   type_modal: ModalType
-  open_modal: (type: ModalType) => void
-  close_modal: () => void
+  /**Hàm mở modal */
+  openModal: (type: ModalType) => void
+  /**Hàm đóng modal */
+  closeModal: () => void
 }
 
 const useModal = create<ModalStore>()(set => ({
   show_modal: false,
   type_modal: 'none',
-  open_modal: type => set(() => ({ show_modal: true, type_modal: type })),
-  close_modal: () => set(() => ({ show_modal: false })),
+  openModal: type => set(() => ({ show_modal: true, type_modal: type })),
+  closeModal: () => set(() => ({ show_modal: false })),
 }))
 
 export default useModal

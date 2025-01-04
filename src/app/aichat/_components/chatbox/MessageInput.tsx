@@ -28,16 +28,20 @@ function MessageInput({ input_value, set_input_value }: MessageInputProps) {
   //   set_input_value(event.currentTarget.innerText)
   // }
 
+  /**Hàm thay đổi độ cao của textarea khi xuống dòng */
   function onChangeTextarea(event: ChangeEvent<HTMLTextAreaElement>) {
     event.target.style.height = 'inherit'
     event.target.style.height = `${event.target.scrollHeight}px`
     set_input_value(event.currentTarget.value)
   }
 
+  /**Hàm chạy khi ấn phím */
   function handleKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+    /**Nhập "/" thì sẽ hiện box plugin */
     if (event.key === '/') {
       set_show_plugins(true)
     }
+    /**Nhập "/" thì sẽ ẩn box plugin */
     if (event.key === ' ' || event.key === 'Spacebar') {
       set_show_plugins(false)
     }

@@ -1,13 +1,14 @@
 'use client'
 
+import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import useModal from '@/hooks/useModal'
-import { CommentProfilePicture } from '@/public/dumb-data'
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
+import { UserGroupIcon, PencilSquareIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
-import { useState } from 'react'
+import { CommentProfilePicture } from '@/public/dumb-data'
+import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
 
 const SOCIAL_MEDIA_DUMB_DATA = [
   GeneralSettingIcons.logo_instagram,
@@ -18,7 +19,7 @@ const SOCIAL_MEDIA_DUMB_DATA = [
 
 function Group() {
   const [show_group, set_show_group] = useState(false)
-  const { open_modal } = useModal()
+  const { openModal } = useModal()
   return (
     <div className="relative">
       <button
@@ -27,7 +28,7 @@ function Group() {
       >
         test
       </button>
-      <span>{GeneralSettingIcons.group_user}</span>
+      <UserGroupIcon className="size-5" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <div className="flex flex-col">
@@ -45,7 +46,7 @@ function Group() {
           <Button
             className="bg-blue-600 text-sm hover:bg-blue-500 py-2 px-4 h-7"
             size={'sm'}
-            onClick={() => open_modal('create-group')}
+            onClick={() => openModal('create-group')}
           >
             Thêm
           </Button>
@@ -126,15 +127,15 @@ function Group() {
                 <Button
                   size={'sm'}
                   className="bg-slate-200 text-black py-2 px-4 hover:bg-slate-300"
-                  onClick={() => open_modal('modify-group')}
+                  onClick={() => openModal('modify-group')}
                 >
-                  {GeneralSettingIcons.pencil_square}{' '}
+                  <PencilSquareIcon className="size-5" />
                   <span className="text-sm font-medium">Sửa Nhóm 1</span>
                 </Button>
                 <Button
                   size={'sm'}
                   className="bg-transparent border-none shadow-none text-red-500 py-2 px-4 hover:bg-slate-50"
-                  onClick={() => open_modal('delete-group')}
+                  onClick={() => openModal('delete-group')}
                 >
                   <span className="text-sm font-medium">Xóa nhóm</span>
                 </Button>

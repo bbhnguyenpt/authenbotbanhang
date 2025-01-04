@@ -3,11 +3,11 @@ import { DialogContent } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import useModal from '@/hooks/useModal'
-import React from 'react'
-import GroupItem from '../_components/GroupItem'
+
+import GroupItem from '@/components/modal/_components/GroupItem'
 
 function ModifyGroupModal() {
-  const { close_modal } = useModal()
+  const { closeModal } = useModal()
   return (
     <DialogContent className="flex flex-col gap-0 p-0 m-0 border h-full max-h-[90vh] max-w-[95vw] lg:max-w-[1296px]">
       <span className="py-3 px-6 text-lg font-semibold">Chỉnh sửa Nhóm</span>
@@ -53,7 +53,7 @@ function ModifyGroupModal() {
         <Button
           className="py-2 px-4 bg-slate-100 hover:bg-slate-200 text-sm text-black font-medium shadow-none"
           size={'sm'}
-          onClick={close_modal}
+          onClick={closeModal}
         >
           Đóng
         </Button>

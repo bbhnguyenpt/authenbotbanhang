@@ -15,6 +15,7 @@ import { Dolla_Picture } from '@/public/dumb-data'
 import { DUMB_DATA_COMMENT } from './Post'
 
 interface CommentModalProps {
+  /**ReactNode con của Component */
   children: ReactNode
 }
 

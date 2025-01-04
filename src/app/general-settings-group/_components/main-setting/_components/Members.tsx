@@ -1,13 +1,13 @@
 import { Button } from '@/components/ui/button'
-import { CommentProfilePicture } from '@/public/dumb-data'
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
+import { UsersIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-import React from 'react'
+
+import { CommentProfilePicture } from '@/public/dumb-data'
 
 function Members() {
   return (
     <div>
-      <span>{GeneralSettingIcons.users_solid}</span>
+      <UsersIcon className="size-5" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <span className="text-sm font-medium">Thành viên (8/20)</span>

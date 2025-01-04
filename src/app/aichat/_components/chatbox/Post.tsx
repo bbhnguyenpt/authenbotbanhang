@@ -37,10 +37,15 @@ export const DUMB_DATA_COMMENT: CommentProps[] = [
 ]
 
 interface PostProps {
+  /**Người đăng bài */
   publisher: string
+  /**Nội dung bài đăng */
   content: string
+  /**Số lượt tương tác cảm xúc */
   reaction_count: number
+  /**Số lượt bình luận */
   comment_count: number
+  /**Số lượt chia sẻ */
   share_count: number
 }
 

@@ -24,7 +24,7 @@ function ConfigurationSetting({
   return (
     <div className="flex justify-between">
       <div className="w-full max-w-[732px] flex gap-3">
-        <span>{icon}</span>
+        <span className="size-5 text-slate-700">{icon}</span>
         <div className="flex flex-col gap-0">
           <span className="text-sm font-medium">{name}</span>
           <span className="text-sm text-muted-foreground whitespace-pre-line">

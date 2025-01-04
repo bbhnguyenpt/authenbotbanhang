@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button'
+import { RectangleStackIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
+
 import { CommentProfilePicture } from '@/public/dumb-data'
 import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
-import Image from 'next/image'
-import React from 'react'
 
 const SOCIAL_MEDIA_DUMB_DATA = [
   GeneralSettingIcons.logo_instagram,
@@ -14,7 +15,7 @@ const SOCIAL_MEDIA_DUMB_DATA = [
 function SocialMedia() {
   return (
     <div>
-      <span>{GeneralSettingIcons.rectangle_stack}</span>
+      <RectangleStackIcon className="size-5" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <span className="text-sm font-medium">Trang (4/4)</span>

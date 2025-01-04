@@ -1,16 +1,21 @@
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
+import {
+  BellAlertIcon,
+  BellIcon,
+  SpeakerWaveIcon,
+} from '@heroicons/react/20/solid'
+
 import ConfigurationSetting, {
   ConfigurationSettingProps,
-} from './ConfigurationSetting'
+} from '@/app/general-settings/_components/main-setting/_components/ConfigurationSetting'
 
 const NOTIFICATIONANDSOUND_DUMB_DATA: ConfigurationSettingProps[] = [
   {
-    icon: GeneralSettingIcons.bell_alert,
+    icon: <BellAlertIcon />,
     name: 'Thông báo khi có tin nhắn mới hoặc bình luận mới',
     description: 'Gửi thông báo khi có tin nhắn mới hoặc bình luận mới',
   },
   {
-    icon: GeneralSettingIcons.speaker,
+    icon: <SpeakerWaveIcon />,
     name: 'Phát âm thanh',
     description: 'Phát âm thanh khi có thông báo mới',
   },
@@ -19,7 +24,7 @@ const NOTIFICATIONANDSOUND_DUMB_DATA: ConfigurationSettingProps[] = [
 function NotificationAndSound() {
   return (
     <div>
-      <span>{GeneralSettingIcons.bell_solid}</span>
+      <BellIcon className="size-5" />
       <div className="flex-auto flex flex-col gap-1">
         <div className="flex flex-col gap-0 justify-between pb-3">
           <span className="text-sm font-semibold">Thông báo & Âm Thanh</span>

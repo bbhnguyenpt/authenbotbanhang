@@ -88,6 +88,7 @@ function InputSection({ type }: { type: 'post' | 'aisugguest' }) {
       )}
     >
       {/* Test Purpose --------------- */}
+      {/**Button này chỉ để test bấm để thấy các trạng thái khác nhau của suggest input */}
       <button
         className="absolute -top-3 right-5 border border-black px-1 opacity-0"
         onClick={() => {

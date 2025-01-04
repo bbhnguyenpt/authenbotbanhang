@@ -1,24 +1,29 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
-import React, { useState } from 'react'
+import {
+  CodeBracketIcon,
+  CogIcon,
+  CreditCardIcon,
+  SparklesIcon,
+} from '@heroicons/react/24/solid'
+import { useState } from 'react'
 
 const NAV_GENERAL_SETTING_DUMB_DATA = [
   {
-    icon: GeneralSettingIcons.cog_solid,
+    icon: <CogIcon className="size-5" />,
     label: 'Cài đặt',
   },
   {
-    icon: GeneralSettingIcons.credit_card_solid,
+    icon: <CreditCardIcon className="size-5" />,
     label: 'Thanh toán',
   },
   {
-    icon: GeneralSettingIcons.sparkles_solid,
+    icon: <SparklesIcon className="size-5" />,
     label: 'Ứng dụng',
   },
   {
-    icon: GeneralSettingIcons.code_bracket,
+    icon: <CodeBracketIcon className="size-5" />,
     label: 'API',
   },
 ]

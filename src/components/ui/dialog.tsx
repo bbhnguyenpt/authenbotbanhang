@@ -19,7 +19,7 @@ const DialogOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
 >(({ className, ...props }, ref) => {
-  const { close_modal } = useModal()
+  const { closeModal } = useModal()
   return (
     <DialogPrimitive.Overlay
       ref={ref}
@@ -27,7 +27,7 @@ const DialogOverlay = React.forwardRef<
         'fixed inset-0 z-50 bg-black/30  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
         className
       )}
-      onClick={close_modal}
+      onClick={closeModal}
       {...props}
     />
   )
@@ -38,7 +38,7 @@ const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
 >(({ className, children, ...props }, ref) => {
-  const { close_modal } = useModal()
+  const { closeModal } = useModal()
   return (
     <DialogPortal>
       <DialogOverlay />
@@ -53,7 +53,7 @@ const DialogContent = React.forwardRef<
         {children}
         <DialogPrimitive.Close
           onClick={() => {
-            close_modal()
+            closeModal()
           }}
           className="absolute right-2 top-2 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none  disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
         >

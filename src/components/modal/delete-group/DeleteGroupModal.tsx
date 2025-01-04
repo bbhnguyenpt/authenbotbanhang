@@ -1,9 +1,9 @@
-import { DialogContent } from '@/components/ui/dialog'
 import useModal from '@/hooks/useModal'
-import { Button } from '../../ui/button'
+import { DialogContent } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
 
 function DeleteGroupModal() {
-  const { close_modal } = useModal()
+  const { closeModal } = useModal()
   return (
     <DialogContent className="flex flex-col gap-4 p-6 max-w-[458px]">
       <div className="flex flex-col gap-0">
@@ -17,7 +17,7 @@ function DeleteGroupModal() {
         <Button
           className="py-2 px-4 bg-slate-100 hover:bg-slate-200 text-sm text-slate-500 font-medium shadow-none"
           size={'sm'}
-          onClick={close_modal}
+          onClick={closeModal}
         >
           Đóng
         </Button>

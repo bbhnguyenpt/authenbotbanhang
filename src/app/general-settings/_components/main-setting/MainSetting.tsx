@@ -1,4 +1,4 @@
-import React from 'react'
+import { Label } from '@/components/ui/label'
 import {
   Select,
   SelectContent,
@@ -6,14 +6,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import GeneralSettingIcons from '@/Svgs/GeneralSettingIcons'
-import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
-import SocialMedia from './_components/SocialMedia'
-import Members from './_components/Members'
-import Conversation from './_components/Conversation'
-import NotificationAndSound from './_components/NotificationAndSound'
-import CustomerInfomation from './_components/CustomerInfomation'
+import { CogIcon } from '@heroicons/react/20/solid'
+
+import Conversation from '@/app/general-settings/_components/main-setting/_components/Conversation'
+import CustomerInfomation from '@/app/general-settings/_components/main-setting/_components/CustomerInfomation'
+import Members from '@/app/general-settings/_components/main-setting/_components/Members'
+import NotificationAndSound from '@/app/general-settings/_components/main-setting/_components/NotificationAndSound'
+import SocialMedia from '@/app/general-settings/_components/main-setting/_components/SocialMedia'
 
 function MainSetting() {
   return (
@@ -33,7 +33,7 @@ function MainSetting() {
       </Select>
 
       <div>
-        <span>{GeneralSettingIcons.cog_mini}</span>
+        <CogIcon className="size-5" />
         <div className="flex-auto flex flex-col gap-3">
           <span className="text-sm font-medium text-zinc-950">
             Cài đặt chung
