@@ -22,7 +22,7 @@ function page() {
               <MagnifyingGlassIcon className="size-5 text-slate-500" />
               <input
                 type="text"
-                className="focus:border-none focus:outline-none"
+                className="focus:border-none focus:outline-none text-sm"
                 placeholder="Tìm kiếm"
               />
             </div>
