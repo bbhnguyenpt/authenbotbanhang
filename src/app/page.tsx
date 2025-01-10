@@ -68,6 +68,14 @@ export default function Home() {
           Group
         </Link>
       </Button>
+      <Button>
+        <Link
+          href={'/skeleton'}
+          className="size-full"
+        >
+          Loading
+        </Link>
+      </Button>
     </div>
   )
 }
