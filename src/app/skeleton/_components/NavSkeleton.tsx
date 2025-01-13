@@ -1,10 +1,11 @@
 import React from 'react'
 import NavItemSkeleton, { NavItemSkeletonProps } from './NavItemSkeleton'
 import NavQrZaloIcons from '@/Svgs/NavQrZaloIcons'
+import { Squares2X2Icon } from '@heroicons/react/24/solid'
 const NAV_QRZALO_DUMB_DATA: NavItemSkeletonProps[] = [
   {
-    icon: NavQrZaloIcons.clock,
-    label: 'Kích hoạt trang',
+    icon: <Squares2X2Icon className="size-4" />,
+    label: 'Tất cả',
   },
   {
     icon: NavQrZaloIcons.facebook,

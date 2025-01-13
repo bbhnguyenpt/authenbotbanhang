@@ -23,11 +23,11 @@ function page() {
               <input
                 type="text"
                 className="focus:border-none focus:outline-none text-sm"
-                placeholder="Tìm kiếm"
+                placeholder="Tìm kiếm..."
               />
             </div>
             <Select>
-              <SelectTrigger className="bg-white w-[242px]">
+              <SelectTrigger className="bg-white w-[242px] text-slate-700 text-sm">
                 <SelectValue
                   placeholder="CTCP Công nghệ Chatbot "
                   className="line-clamp-1"

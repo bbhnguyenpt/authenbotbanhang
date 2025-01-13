@@ -22,7 +22,7 @@ function HeaderSkeleton() {
         </button>
         <button className="flex items-center py-1.5 px-2 gap-1 rounded bg-slate-200 text-xs font-medium">
           <SquaresPlusIcon className="size-3.5 " />
-          <span>Kết nối trang</span>
+          <span>Chế độ gộp trang</span>
         </button>
         <div className="relative">
           <Image
