@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import useModal from '@/hooks/useModal'
 import { UserGroupIcon, PencilSquareIcon } from '@heroicons/react/24/solid'
+import { MinusCircleIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
 import { CommentProfilePicture } from '@/public/dumb-data'
@@ -69,18 +70,18 @@ function Group() {
               <div className="flex flex-col gap-3">
                 <div>
                   <span className="text-sm font-medium">Trang</span>
-                  <div className="grid grid-cols-4">
+                  <div className="grid grid-cols-4 gap-6">
                     {SOCIAL_MEDIA_DUMB_DATA.map((social_media, index) => (
                       <div
                         key={index}
-                        className="p-2 flex gap-2 items-center"
+                        className="group p-2 flex gap-2 items-center hover:bg-slate-100 rounded-lg cursor-pointer"
                       >
                         <Image
                           src={CommentProfilePicture}
                           alt="profile"
                           className="size-8 rounded-xl"
                         />
-                        <div className="flex flex-col gap-0">
+                        <div className="flex flex-col gap-0 flex-auto">
                           <span className="text-sm font-medium">
                             Bot Bán Hàng
                           </span>
@@ -91,24 +92,27 @@ function Group() {
                             </span>
                           </div>
                         </div>
+                        <div className="h-full">
+                          <MinusCircleIcon className="w-5 text-slate-500 stroke-[1.5] stroke-slate-500 opacity-0 group-hover:opacity-100" />
+                        </div>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div>
                   <span className="text-sm font-medium">Thành viên</span>
-                  <div className="grid grid-cols-4">
+                  <div className="grid grid-cols-4 gap-6">
                     {new Array(4).fill(0).map((_, index) => (
                       <div
                         key={index}
-                        className="p-2 flex gap-2 items-center"
+                        className="group p-2 flex gap-2 items-center hover:bg-slate-100 rounded-lg cursor-pointer"
                       >
                         <Image
                           src={CommentProfilePicture}
                           alt="profile"
                           className="size-8 rounded-xl"
                         />
-                        <div className="flex flex-col gap-0">
+                        <div className="flex flex-col gap-0 flex-auto">
                           <span className="text-sm font-medium">
                             Nguyễn Văn A
                           </span>
@@ -117,6 +121,9 @@ function Group() {
                               Đã thêm 3 ngày trước
                             </span>
                           </div>
+                        </div>
+                        <div className="h-full">
+                          <MinusCircleIcon className="w-5 text-slate-500 stroke-[1.5] stroke-slate-500 opacity-0 group-hover:opacity-100" />
                         </div>
                       </div>
                     ))}

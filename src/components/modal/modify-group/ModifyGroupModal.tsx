@@ -28,7 +28,7 @@ function ModifyGroupModal() {
               <span className="font-medium text-sm">Đã chọn: 1 Thành viên</span>
             </div>
             {new Array(4).fill(0).map((_, index) => (
-              <GroupItem key={index} />
+              <GroupItem key={index} name={`Nguyễn Văn ${index+1}`} />
             ))}
             <span className="text-xs text-slate-700">
               Lưu ý: Chức năng Nhóm chỉ áp dụng cho Thành viên. Quản trị viên
@@ -44,6 +44,7 @@ function ModifyGroupModal() {
               <GroupItem
                 key={index}
                 isPage={true}
+                name={`Page ${index+1}`}
               />
             ))}
           </div>

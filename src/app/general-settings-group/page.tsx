@@ -9,7 +9,6 @@ function page() {
       <Header />
       <div className="h-dvh flex py-5 gap-3 overflow-hidden">
         <NavGeneralSetting />
-
         <section className="flex-auto overflow-y-auto custom-scrollbar rounded-lg">
           <MainSetting />
         </section>

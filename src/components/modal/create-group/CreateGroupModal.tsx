@@ -24,28 +24,30 @@ function CreateGroupModal() {
         <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-4 ">
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Thành viên</span>
-              <span className="font-medium text-sm">Đã chọn: 1 Thành viên</span>
-            </div>
-            {new Array(4).fill(0).map((_, index) => (
-              <GroupItem key={index} />
-            ))}
-            <span className="text-xs text-slate-700">
-              Lưu ý: Chức năng Nhóm chỉ áp dụng cho Thành viên. Quản trị viên
-              mặc định sẽ xem được toàn bộ các Trang.
-            </span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center justify-between">
-              <span className="font-semibold">Thành viên</span>
+              <span className="font-semibold">Trang</span>
               <span className="font-medium text-sm">Đã chọn: 1 Trang</span>
             </div>
             {new Array(4).fill(0).map((_, index) => (
               <GroupItem
                 key={index}
                 isPage={true}
+                isMoved={index===2}
+                name={`Page ${index+1}`}
               />
             ))}
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Thành viên</span>
+              <span className="font-medium text-sm">Đã chọn: 1 Thành viên</span>
+            </div>
+            {new Array(4).fill(0).map((_, index) => (
+              <GroupItem key={index} name={`Nguyễn Văn ${index+1}`} />
+            ))}
+            <span className="text-xs text-slate-700">
+              Lưu ý: Chức năng Nhóm chỉ áp dụng cho Thành viên. Quản trị viên
+              mặc định sẽ xem được toàn bộ các Trang.
+            </span>
           </div>
         </div>
       </div>
