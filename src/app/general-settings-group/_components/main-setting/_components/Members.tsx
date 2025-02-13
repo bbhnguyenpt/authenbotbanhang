@@ -7,7 +7,7 @@ import { CommentProfilePicture } from '@/public/dumb-data'
 function Members() {
   return (
     <div>
-      <UsersIcon className="size-5" />
+      <UsersIcon className="size-5 flex-shrink-0" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <span className="text-sm font-medium">Thành viên (8/20)</span>
@@ -18,7 +18,7 @@ function Members() {
             Thêm
           </Button>
         </div>
-        <div className="grid grid-cols-4">
+        <div className="grid lg:grid-cols-4">
           {new Array(8).fill(0).map((_, index) => (
             <div
               key={index}

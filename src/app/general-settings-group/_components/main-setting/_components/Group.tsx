@@ -29,7 +29,7 @@ function Group() {
       >
         test
       </button>
-      <UserGroupIcon className="size-5" />
+      <UserGroupIcon className="size-5 flex-shrink-0" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <div className="flex flex-col">
@@ -70,7 +70,7 @@ function Group() {
               <div className="flex flex-col gap-3">
                 <div>
                   <span className="text-sm font-medium">Trang</span>
-                  <div className="grid grid-cols-4 gap-6">
+                  <div className="grid lg:grid-cols-4 lg:gap-6">
                     {SOCIAL_MEDIA_DUMB_DATA.map((social_media, index) => (
                       <div
                         key={index}
@@ -101,7 +101,7 @@ function Group() {
                 </div>
                 <div>
                   <span className="text-sm font-medium">Thành viên</span>
-                  <div className="grid grid-cols-4 gap-6">
+                  <div className="grid lg:grid-cols-4 lg:gap-6">
                     {new Array(4).fill(0).map((_, index) => (
                       <div
                         key={index}

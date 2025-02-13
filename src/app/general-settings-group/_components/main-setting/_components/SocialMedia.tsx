@@ -15,7 +15,7 @@ const SOCIAL_MEDIA_DUMB_DATA = [
 function SocialMedia() {
   return (
     <div>
-      <RectangleStackIcon className="size-5" />
+      <RectangleStackIcon className="size-5 flex-shrink-0" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <span className="text-sm font-medium">Trang (4/4)</span>
@@ -26,7 +26,7 @@ function SocialMedia() {
             Thêm
           </Button>
         </div>
-        <div className="grid grid-cols-4">
+        <div className="grid lg:grid-cols-4">
           {SOCIAL_MEDIA_DUMB_DATA.map((social_media, index) => (
             <div
               key={index}

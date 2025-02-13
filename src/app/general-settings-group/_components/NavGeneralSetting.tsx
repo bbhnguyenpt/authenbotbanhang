@@ -31,7 +31,7 @@ const NAV_GENERAL_SETTING_DUMB_DATA = [
 function NavGeneralSetting() {
   const [selected_item, set_selected_item] = useState(0)
   return (
-    <nav className="w-[230px] rounded-md p-2 flex flex-col gap-1 bg-white">
+    <nav className="lg:w-[230px] rounded-md p-2 flex flex-col gap-1 bg-white">
       {NAV_GENERAL_SETTING_DUMB_DATA.map((nav_item, index) => (
         <div
           key={index}

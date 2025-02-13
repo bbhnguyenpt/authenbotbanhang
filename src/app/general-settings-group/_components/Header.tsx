@@ -14,7 +14,7 @@ function Header() {
           src={Logo}
           className="w-9 h-11 object-contain"
         />
-        <span className="text-2xl font-semibold">Bot Bán Hàng</span>
+        <span className="text-2xl font-semibold hidden lg:block">Bot Bán Hàng</span>
       </div>
       <div className="flex items-center gap-10">
         <Button

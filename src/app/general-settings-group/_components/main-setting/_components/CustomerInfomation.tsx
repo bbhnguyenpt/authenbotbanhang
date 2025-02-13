@@ -9,7 +9,7 @@ interface InfomationTagProps {
 function InfomationTag({ label, value }: InfomationTagProps) {
   return (
     <div className="flex items-center text-sm font-medium">
-      <div className="w-[120px]">{label}</div>
+      <div className="w-[120px] flex-shrink-0">{label}</div>
       <span>{value}</span>
     </div>
   )
@@ -53,7 +53,7 @@ const NOTIFICATIONANDSOUND_DUMB_DATA: InfomationTagProps[] = [
 function CustomerInfomation() {
   return (
     <div>
-      <BriefcaseIcon className="size-5" />
+      <BriefcaseIcon className="size-5 flex-shrink-0" />
       <div className="flex-auto flex flex-col gap-3">
         <div className="flex justify-between">
           <span className="text-sm font-medium">Thông tin khách hàng</span>
@@ -64,14 +64,14 @@ function CustomerInfomation() {
             Sửa
           </Button>
         </div>
-        <div className="grid grid-cols-2 gap-y-3 gap-x-0">
+        <div className="grid lg:grid-cols-2 gap-y-3 gap-x-0">
           {NOTIFICATIONANDSOUND_DUMB_DATA.map((infomation, index) => (
             <InfomationTag
               key={index}
               {...infomation}
             />
           ))}
-          <ul className="w-full list-disc col-span-2 text-xs text-slate-500">
+          <ul className="w-full list-disc lg:col-span-2 text-xs text-slate-500">
             <li>
               Doanh nghiệp nhập đúng thông tin và cung cấp các thông tin khác
               chính xác bằng Tiếng Việt có dấu (đối với thông tin tiếng Việt).

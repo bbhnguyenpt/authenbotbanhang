@@ -39,7 +39,7 @@ const CONVERSATION_DUMB_DATA: ConfigurationSettingProps[] = [
 function Conversation() {
   return (
     <div>
-      <ChatBubbleLeftRightIcon className="size-5" />
+      <ChatBubbleLeftRightIcon className="size-5 flex-shrink-0" />
       <div className="flex-auto flex flex-col gap-1">
         <div className="flex flex-col gap-0 justify-between pb-3">
           <span className="text-sm font-semibold">Hội thoại</span>

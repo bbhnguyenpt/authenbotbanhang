@@ -24,7 +24,7 @@ const NOTIFICATIONANDSOUND_DUMB_DATA: ConfigurationSettingProps[] = [
 function NotificationAndSound() {
   return (
     <div>
-      <BellIcon className="size-5" />
+      <BellIcon className="size-5 flex-shrink-0" />
       <div className="flex-auto flex flex-col gap-1">
         <div className="flex flex-col gap-0 justify-between pb-3">
           <span className="text-sm font-semibold">Thông báo & Âm Thanh</span>
