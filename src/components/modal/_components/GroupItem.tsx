@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { Switch } from '@/components/ui/switch'
 import useModal from '@/hooks/useModal'
 import { CommentProfilePicture } from '@/public/dumb-data'
